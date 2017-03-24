@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<title>4.2生成订单</title>
+<% include _head.html %>
+</head>
+<body>
+
+<section class="wrap">
+
+	<div class="bottom-fixed">
+		<a href="" class="btn btn-primary" style="background-color: #fa8631">去下单</a>
+	</div>
+
+	<section class="main">
+
+		<form action="">
+		<section class="flex-box flex-col flex-col-stretch flex-between" style="min-height:calc(100vh - 60px);">
+
+			<ul class="fs14 col3">
+				<li class="pl15 bgf">
+					<div class="ptb10 bb pr10">
+						<p class="col0 fs15">平安车险</p>
+						<p class="fs13 col9">赔付需要您承担的他人人生伤亡及财产损失</p>
+					</div>
+					<div class="ptb10 pr10 table fs12">
+						<div class="table-cell">
+							<label for="dsan-btn1" class="m-label--self-define mr10 single-line">
+								<input type="checkbox" name="dsan-btn" id="dsan-btn1" checked="">
+								<i></i>
+								<span class="single-line">自燃损失险</span>
+							</label>
+						</div>
+						<div class="table-cell">
+							<label for="dsan-btn2" class="m-label--self-define mr10 single-line">
+								<input type="checkbox" name="dsan-btn" id="dsan-btn2" checked="">
+								<i></i>
+								<span class="single-line">第三者责任险第三者责任险第三者责任险</span>
+							</label>
+						</div>
+						<div class="table-cell">
+							<label for="dsan-btn3" class="m-label--self-define mr10 single-line">
+								<input type="checkbox" name="dsan-btn" id="dsan-btn3" checked="">
+								<i></i>
+								<span class="single-line">无过责任险</span>
+							</label>
+						</div>
+					</div>
+				</li>
+				<li class="plr15 ptb10 fs13 col9">
+					请填写您的基本资料
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box"><i class="form-ico form-ico0"></i>联系人</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="请填写">
+					</div>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box"><i class="form-ico form-ico1"></i>联系电话</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="请填写">
+					</div>
+				</li>
+				<li class="m-cell bgf">
+					<div class="m-cell__hd flex-box"><i class="form-ico form-ico13"></i>选填</div>
+					<div class="m-cell__bd">
+						<textarea name="" id="" cols="30" rows="4" placeholder="给我们留言 (45字以内)"></textarea>
+					</div>
+				</li>
+				<li class="plr15 ptb10 fs13 col9">
+					客服会根据您预留的电话联系您，并核算订单价格
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box"><i class="form-ico form-ico14"></i>支付方式</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="" value="客服确认后，微信支付" disabled="">
+					</div>
+				</li>
+			</ul>
+			<!-- 个人资料填写 end -->
+		<!-- 	<div class="mt15">
+			<a href="" class="sos-btn ma fs15">请求救援</a>
+		</div> -->
+		</section>
+		</form>
+	</section>
+
+</section>
+
+
+<% include _foot.html %>
+<script>
+	$("body").on("touchmove",function(){
+		$("input,textarea").blur();
+	})
+</script>
+</body>
+</html>

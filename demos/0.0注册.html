@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+	<head>
+		<title>0.0注册</title>
+	<% include _head.html %>
+	</head>
+
+<body class="bgf">
+<section class="wrap">
+
+	<section class="main">
+		<section class="login-wrap fs13">
+			<form action="register.php" id="registerForm" class="flex-box flex-col flex-col-stretch flex-between" style="min-height: 100vh;padding:30px 25px 20px;">
+				<div>
+					<!-- <img src="images/logo.png" alt="" class="block ma w100"> -->
+
+					<div class="inp-block">
+						<input type="tel" id="mobile" class="" placeholder="你的手机号" name="mobile">
+					</div>
+
+					<div class="mt10 flex-box flex-col-stretch">
+						<div class="inp-block flex-grow-1">
+							<input type="text" id="picCode" class="" placeholder="输入验证码" name="picCode">
+						</div>
+						<div class="code-wrap flex-grow-0">
+							<img src="images/default-code.png" alt="" class="block">
+						</div>
+					</div>
+
+					<div class="mt10 inp-block flex-box">
+						<input type="text" id="msgCode" class=" flex-grow-1" placeholder="短信验证码" name="msgCode">
+						<!-- <a href="javascript:;" class="flex-grow-0 col6">点击获取</a> -->
+						<a href="javascript:;" class="flex-grow-0 col9">56s后重新获取</a>
+					</div>
+
+					<div class="mt10 inp-block">
+						<input type="password" id="pwd" class="" placeholder="密码（字母，数字，至少6位）" name="pwd">
+					</div>
+
+					<div class="mt10 inp-block">
+						<input type="text" class="" placeholder="企业名称或编码（可不填）">
+					</div>
+
+					<div class="mt10 col9 flex-box flex-col-start fs13 ps">
+						<span class="flex-grow-0">注：</span>
+						<p>如没有企业关系，企业福利内容将自动计入公共       福利池，当贵司与平台签订相关协议后，属于企       业福利的部分将自动转入所属公司。</p>
+					</div>
+
+					<a href="javascript:;" class="btn btn-primary mt20" id="registerBtn">注　册</a>
+
+					<div class="mt10 pb20 tc">
+						<label for="agree" class="">
+							<input type="checkbox" id="agree" class="mr5">
+							<span class="colae">我已阅读并同意</span>
+						</label>
+							<a href="" class="blue">《企业福利平台注册协议》</a>
+					</div>
+				</div>
+				<div class="pt15 mt15 bt">
+					<a href="" class="btn btn-outlined">已有账号？登录</a>
+				</div>
+			</form>
+		</section>
+			<!-- 主体 end -->
+	</section>
+</section>
+
+<% include _foot.html %>
+<script>
+	//定义flag发送验证码
+	var mobileCode = 1;
+
+	$("#registerBtn").click(function(){
+		// 手机验证
+		var mobile = $("#mobile").val().trim();
+		if(mobile == "" || mobile == null){
+			$.toast("请输入您的手机号码","text");
+			$("#mobile").focus();
+			return false;
+		}
+		if(!checkTel(mobile)){
+			$.toast("电话号码格式不正确","text");
+			$("#mobile").focus();
+			return false;
+		}
+
+		//图形验证
+		var picCode = $.trim($("#picCode").val());
+		if(picCode == "" || picCode == null){
+			$.toast("请输入图形验证码","text");
+			$("#picCode").focus();
+			return false;
+		};
+
+		//短信验证
+		var msgCode = $.trim($("#msgCode").val());
+		if(!mobileCode){
+			$.toast("请进行短信验证","text");
+			return false;
+		};
+
+		//密码验证
+		var pwd = $.trim($("#pwd").val());
+		if(!checkPwd(pwd)){
+			$.toast("密码格式不正确，请设置字母数字至少6位","text");
+			$("#pwd").focus();
+			return false;
+		};
+
+		//提交表单
+		var registerForm = $("#registerForm");
+			var data = registerForm.serialize(); //表单序列化
+			data += '&mobileCode=' + mobileCode;
+
+
+			$.ajax({
+				url: registerForm.attr("action"),
+				type: 'POST',
+				dataType: 'json',
+				data: data,
+				success:function(data){
+					if(data.status){
+						console.log(data.status);
+						$.toast(data.info,'test',function(){
+							location.href = data.url;
+						})
+					}else{
+						// console.log(data.status);
+						$.alert(data.info);
+					}
+					$("#codeSendBtn").click();
+					// console.log("success");
+        },
+        error: function () {
+					$.hideLoading();
+					$.alert('网络超时，请再次尝试失败后联系管理员');
+					console.log(data);
+					console.log(data.status);
+					console.log("error");
+        }
+			})
+	});
+
+
+	function checkTel(tel){
+		// var isTel = /^[1][358]\d{9}$/;
+		// var isTel = /^0{0,1}(13[0-9]|15[7-9]|17[0-9]|153|156|18[7-9])[0-9]{8}$/;
+		var isTel = /^(13[0-9]|15[7-9]|17[0-9]|153|156|18[7-9])[0-9]{8}$/;
+		return isTel.test(tel) ? true : false;
+	}
+	function checkPwd(pwd){
+		var isPwd = /^[a-zA-Z\d_]{6,}$/;
+		return isPwd.test(pwd) ? true : false;
+	}
+</script>
+
+</body>
+</html>

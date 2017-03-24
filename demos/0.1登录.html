@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>0.1登录</title>
+	<% include _head.html %>
+	</head>
+
+<body class="bgf">
+<section class="wrap">
+
+	<section class="main">
+		<section class="login-wrap fs13">
+			<form action="" class="flex-box flex-col flex-col-stretch flex-between" style="min-height: 100vh;padding:40px 30px 20px;">
+				<div>
+					<!-- <img src="images/logo.png" alt="" class="block ma w100"> -->
+
+					<div class="inp-block">
+						<input type="tel" id="mobile" class="" placeholder="你的手机号" name="mobile">
+					</div>
+
+					<div class="mt10 inp-block flex-box">
+						<input type="text" id="msgCode" class=" flex-grow-1" placeholder="短信验证码" name="msgCode">
+						<!-- <a href="javascript:;" class="flex-grow-0 col6">点击获取</a> -->
+						<a href="javascript:;" class="flex-grow-0 col9">56s后重新获取</a>
+					</div>
+
+					<div class="mt10 inp-block">
+						<input type="password" id="pwd" class="" placeholder="密码（字母，数字，至少6位）" name="pwd">
+					</div>
+
+					<a href="" class="btn btn-primary mt20">登　录</a>
+
+					<div class="tc">
+						<a href="" class="mt10 block fs12 col6">忘记密码？</a>
+					</div>
+
+				</div>
+
+				<div class="pt15 mt15 bt">
+					<a href="" class="btn btn-outlined">没有账号？注册</a>
+				</div>
+			</form>
+		</section>
+			<!-- 主体 end -->
+	</section>
+</section>
+
+<% include _foot.html %>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<title>5.2个人设置</title>
+<% include _head.html %>
+</head>
+<body>
+
+<section class="wrap">
+
+	<div class="bottom-fixed">
+		<a href="" class="btn btn-primary" style="background-color: #fa8631">
+			确认修改
+		</a>
+	</div>
+
+	<section class="main">
+
+		<form action="">
+
+			<ul class="fs14 col3 user-data">
+				<li class="m-cell flex-center bgf bb">
+					<div class="m-cell__hd flex-box">头　　像</div>
+					<a href="" class="m-cell__bd arrowR">
+						<div class="item-pic">
+							<img src="images/default-none-head.png" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box">用户昵称</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="请填写">
+					</div>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box"></i>性　　别</div>
+					<div class="m-cell__bd arrow-icon">
+						<input name="" type="text" class="" placeholder="请选择">
+					</div>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box">联系方式</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="请填写">
+					</div>
+				</li>
+				<!-- <li class="m-cell bgf">
+					<div class="m-cell__hd flex-box">故障说明</div>
+					<div class="m-cell__bd">
+						<textarea name="" id="" cols="30" rows="4" placeholder="选填，100字以内"></textarea>
+					</div>
+				</li> -->
+			</ul>
+			<!-- 个人资料填写 end -->
+
+		</form>
+	</section>
+
+</section>
+
+
+<% include _foot.html %>
+<script>
+	$("body").on("touchmove",function(){
+		$("input,textarea").blur();
+	})
+</script>
+</body>
+</html>

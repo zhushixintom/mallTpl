@@ -1,0 +1,71 @@
+/*m-label 自适应*/
+
+.m-label {
+  position: relative;
+  display: block;
+  input {
+    position: absolute;
+    left: -999em;
+    &:checked + i {
+      color: @color-primary;
+      border-color: @color-primary;
+    }
+  }
+  i {
+    border-radius: 3px;
+    display: block;
+    border: 1px solid #e1e1e1;
+    color: inherit;
+    padding: 5px 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &.m-label--icon{
+    input:checked + i{
+      background: url("../images/default-tick.png") right bottom no-repeat;
+      background-size: 18px auto;
+    }
+  }
+  &.m-label--auto-width{
+    // display: inline-block;
+    i{
+      // display: inline-block;
+      padding: 4px 10px;
+    }
+  }
+  &.m-label--full-bg{
+    input:checked + i {
+      border-color: @color-primary;
+      background-color: @color-primary;
+      color: #fff;
+    }
+  }
+}
+
+/* 自定义图标的label */
+.m-label--self-define{
+  position: relative;
+  display: block;
+  input {
+    position: absolute;
+    left: -999em;
+    &:checked + i {
+      background:url(@label-tag) center center no-repeat;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%;
+              border:none;
+    }
+  }
+  i{
+    width: 14px;
+    height: 14px;
+    border:1px solid #898989;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: -2px;
+  }
+}
+
+/* ======================以上为常用样式=========================== */

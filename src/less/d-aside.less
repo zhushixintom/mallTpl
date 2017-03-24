@@ -1,0 +1,54 @@
+/*分类-侧边栏*/
+
+.left-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 2;
+  background-color: #efeff4;
+}
+
+.left-fixed ~ .main{
+  padding-left: ~"calc(25% + 15px)";
+  padding-left: ~"-webkit-calc(25% + 15px)";
+}
+
+.left-bar {
+  padding: 49px 0 50px 0;
+  a {
+    display: block;
+    width: 100%;
+    color: #969696;
+    padding: 12px 5px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #efeff4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &.active {
+      color: #f04c4c;
+      background-color: #fff;
+    }
+  }
+}
+
+.cata-list li {
+  width: ~"calc((100% - 40px) / 3)";
+  width: ~"-webkit-calc((100% - 40px) / 3)";
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  &:nth-of-type(3n) {
+    margin-right: 0px;
+  }
+  a {
+    display: block;
+    // color: #4d4d4d;
+  }
+}
+
+/* ================================================= */

@@ -1,0 +1,103 @@
+/*底部菜单*/
+.footer{
+	height: 50px;
+	-webkit-box-shadow: 0 -1px 3px 3px rgba(0,0,0,0.1);
+					box-shadow: 0 -1px 3px 3px rgba(0,0,0,0.1);
+	a{
+		color:@color-foot ;
+		&.on{
+			.col-primary();
+			i{
+				background-position-y: -25px;
+			}
+		}
+	}
+	i{
+		display: block;
+		width: 25px;
+		height: 25px;
+		background-image: url("../images/icon-footer.png");
+		background-size: auto 50px;
+		background-repeat: no-repeat;
+	  .-(@i : 0) when (@i < 6) {
+	    &.fi-@{i} {
+	    	background-position: -(25px*@i) 0;
+	    }
+	    .-((@i + 1));
+	  } .-;
+	}
+}
+
+
+/* detail 底部 */
+.goods_buy a:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/icon-goods.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.goods_buy dt {
+  width: 13% ;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.goods_buy dt a {
+  display: block;
+  line-height: 20px;
+}
+
+.goods_buy dt a:before {
+  display: block;
+  margin: 5px auto 0;
+}
+
+.goods_buy dd {
+  width: 37%;
+}
+
+.goods_buy dd a {
+  display: block;
+  line-height: 51px;
+}
+
+.goods_buy dd a:before {
+  display: inline-block;
+  vertical-align: -7px;
+  margin-right: 8px;
+}
+
+.goods_buy .gbuy-1:before {
+  background-position: 0 0;
+}
+
+.goods_buy .gbuy-2:before {
+  background-position: 0 -25px;
+}
+
+.goods_buy .gbuy-2 em {
+  background-color: #e1454b;
+  right: 5%;
+}
+
+.goods_buy .gbuy-3 {
+  background: rgba(255, 174, 0, 0.9);
+}
+
+.goods_buy .gbuy-3:before {
+  background-position: 0 -50px;
+  position: relative;
+  top: -2px;
+}
+
+.goods_buy .gbuy-4 {
+  background: rgba(241, 81, 81, 0.9);
+}
+
+.goods_buy .gbuy-4:before {
+  background-position: 0 -75px;
+}
+
+/* 商品详情底部 end */

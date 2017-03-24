@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<title>5.3.2保单详情</title>
+<% include _head.html %>
+</head>
+<body>
+
+<section class="wrap">
+
+	<section class="main">
+
+		<div class="pr10 bgf bb">
+			<a href="" class="plr15 ptb10 fs14 flex-box flex-between arrowR" style="padding-right: 15px">
+				<p class="col0">订单号：19865474994</p>
+				<span class="red fs13">已完成</span>
+			</a>
+		</div>
+
+		<ul class="fs14 col3 user-data">
+			<li class="bgf">
+				<div class="pl15 ptb10 bb pr10">
+					<p class="flex-box flex-between col0 fs15">
+						<span>平安车险</span>
+						<span class="col-primary">¥2300.0</span>
+					</p>
+					<p class="mt5 fs13 col9">赔付需要您承担的他人人生伤亡及财产损失</p>
+				</div>
+				<div class="pl15 bgf bb fs13">
+					<p class="ptb10 bb">保单有效期</p>
+					<div class="ptb10 pr10">
+						<p>起：2017-03-02  00：00：00</p>
+						<p>止：2018-03-01  23：59：59</p>
+					</div>
+				</div>
+				<div class="pl15 bb bgf fs13">
+					<p class="ptb10 bb">保单范围</p>
+				<div class="ptb10 pr10 table fs12">
+					<div class="table-cell">
+						<label for="dsan-btn1" class="m-label--self-define mr10 single-line">
+							<input type="checkbox" name="dsan-btn" id="dsan-btn1" checked="">
+							<i></i>
+							<span class="single-line">自燃损失险</span>
+						</label>
+					</div>
+					<div class="table-cell">
+						<label for="dsan-btn2" class="m-label--self-define mr10 single-line">
+							<input type="checkbox" name="dsan-btn" id="dsan-btn2" checked="">
+							<i></i>
+							<span class="single-line">第三者责任险第三者责任险第三者责任险</span>
+						</label>
+					</div>
+					<div class="table-cell">
+						<label for="dsan-btn3" class="m-label--self-define mr10 single-line">
+							<input type="checkbox" name="dsan-btn" id="dsan-btn3" checked="">
+							<i></i>
+							<span class="single-line">无过责任险</span>
+						</label>
+					</div>
+				</div>
+				</div>
+			</li>
+			<li class="m-cell bgf bb mt10">
+				<div class="m-cell__hd flex-box">支付方式</div>
+				<div class="m-cell__bd">
+					微信支付
+				</div>
+			</li>
+			<li class="m-cell bgf bb">
+				<div class="m-cell__hd flex-box">联系人</div>
+				<div class="m-cell__bd">
+					用户A
+				</div>
+			</li>
+			<li class="m-cell bgf bb">
+				<div class="m-cell__hd flex-box">联系电话</div>
+				<div class="m-cell__bd">
+					18512349876
+				</div>
+			</li>
+			<li class="m-cell bgf">
+				<div class="m-cell__hd flex-box">备注</div>
+				<div class="m-cell__bd">
+					由于使用动画效果的机会越来越多，尚未使用动画效果的简约风格的网站。
+				</div>
+			</li>
+		</ul>
+		<div class="mt10 p10 bgf fs13 tr">
+			<p class="col0 fs14">实付款： <span class="red fs16 bold">¥ 2300.00</span></p>
+			<p class="col9">下单时间：2017.02.27 14:39:09</p>
+		</div>
+
+	</section>
+</section>
+
+
+<% include _foot.html %>
+<script>
+	$("body").on("touchmove",function(){
+		$("input,textarea").blur();
+	})
+</script>
+</body>
+</html>

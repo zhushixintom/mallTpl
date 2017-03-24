@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<title>5.2个人设置</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+<section class="wrap">
+
+	<section class="main">
+
+		<form action="">
+
+			<section class="flex-box flex-col flex-col-stretch flex-between" style="min-height:100vh;">
+
+			<ul class="fs14 col3 last">
+				<li class="m-cell flex-center bgf bb">
+					<div class="m-cell__hd flex-box">头　　像</div>
+					<a href="" class="m-cell__bd arrowR">
+						<div class="m-col-30">
+							<p class="item-pic">
+								<img src="images/default-none-head.png" alt="">
+							</p>
+						</div>
+					</a>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box">用户昵称</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="请填写">
+					</div>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box"></i>性　　别</div>
+					<div class="m-cell__bd arrow-icon">
+						<input name="" type="text" class="" placeholder="请选择">
+					</div>
+				</li>
+				<li class="m-cell bgf bb">
+					<div class="m-cell__hd flex-box">联系方式</div>
+					<div class="m-cell__bd">
+						<input name="" type="text" class="" placeholder="请填写">
+					</div>
+				</li>
+				<li class="m-cell bgf">
+					<div class="m-cell__hd flex-box">详细地址</div>
+					<div class="m-cell__bd">
+						<textarea name="" id="" cols="30" rows="5" placeholder="选填，&#xA;100字以内"></textarea>
+					</div>
+				</li>
+			</ul>
+			<!-- 个人资料填写 end -->
+
+			<div class="mt15">
+				<a href="" class="btn btn-primary" style="background-color: #fa8631">
+					确认修改
+				</a>
+			</div>
+
+			</section>
+
+		</form>
+	</section>
+
+</section>
+
+
+<script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<script>
+	$("body").on("touchmove",function(){
+		$("input,textarea").blur();
+	})
+</script>
+</body>
+</html>

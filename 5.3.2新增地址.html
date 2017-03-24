@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<title>5.3.2新增地址</title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<section class="wrap">
+
+	<section class="main">
+
+		<form action="">
+
+			<div class="flex-box flex-col flex-col-stretch flex-between" style="min-height: 100vh">
+				<div>
+					<ul class="bgf fs14 col3 user_data item-form">
+						<li class="table plr10 bb">
+							<div class="table-cell col6 item-hd">收 货 人 :</div>
+							<div class="table-cell">
+								<input name="" type="text" class="form_inp" placeholder="请输入收货人姓名">
+							</div>
+						</li>
+						<li class="table plr10 bb">
+							<div class="table-cell col6 item-hd">联系方式：</div>
+							<div class="table-cell">
+								<input name="" type="text" class="form_inp" placeholder="请输入联系方式">
+							</div>
+						</li>
+						<li class="table plr10 bb">
+							<div class="table-cell col6 item-hd">所在地区：</div>
+							<div class="table-cell arrow-icon">
+							<input name="" type="text" class="form_inp" placeholder="请选择" id="select-site">
+							</div>
+						</li>
+						<li class="table plr10 bb">
+							<div class="table-cell vt pt10 col6 item-hd" style="padding-top: 12px">详细地址：</div>
+							<div class="table-cell vt">
+								<textarea name="" cols="" rows="5" class="form_inp" placeholder="输入详细地址"></textarea>
+							</div>
+						</li>
+					</ul>
+					<!-- 收货地址资料填写 end -->
+
+					<div class="p10 weui_cells_checkbox set_default">
+						<label class="weui_check_label table-cell" for="buy1">
+							<input type="checkbox" class="weui_check" name="checkbox1" id="buy1">
+							<i class="weui_icon_checked">设为默认地址</i>
+						</label>
+					</div>
+					<!-- 设为默认地址 end -->
+				</div>
+
+				<div class="mt15">
+					<a href="" class="btn btn-primary">保存并使用</a>
+				</div>
+				<!-- 表单提交 end -->
+			</div>
+			<script src="weui/js/city-picker.js"></script>
+			<script>
+			$(function() {
+				$("#select-site").cityPicker({
+					title: "选择地区",
+				});
+			});
+			</script>
+
+		</form>
+
+
+
+	</section>
+</section>
+
+
+<script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

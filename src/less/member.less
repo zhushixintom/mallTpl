@@ -1,0 +1,231 @@
+/*member 个人中心*/
+
+.mem-bg {
+  background-color: @color-primary;
+  background-image: url(../images/default-mem-top_bg1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.member-head {
+  .mem-bg;
+  padding: 30px 20px 30px;
+  .avatar {
+    width: 25vw;
+    height: 25vw;
+    max-width: 100px;
+    max-height: 100px;
+    // border: 5px solid lighten(saturate(@color-primary, 40%), 8%);
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    &.avatar-center {
+      width: 30vw;
+      height: 30vw;
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+  .info {
+    position: relative;
+    left: 0;
+    top: 0;
+    .name {
+      text-shadow: 0 0 2px rgba(227, 109, 109, 0.9);
+    }
+    .addr-guan {
+      display: inline-block;
+      background-color: #f56969;
+      padding: 5px 15px;
+      border-radius: 25px;
+      &.bg-blue {
+        background-color: #5dacf4;
+      }
+      img {
+        width: 7px;
+        vertical-align: -1px;
+      }
+    }
+  }
+  .member-head__set {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    font-size: 12px;
+    line-height: 1.8em;
+    i {
+      .ma;
+      width: 20px;
+      height: 20px;
+      display: block;
+      background: url("../images/icon-set-w.png") 0 0 no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+  .d-btn {
+    display: block;
+    padding: 4px 12px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+  }
+}
+
+.jifen-head {
+  padding: 15px 10px;
+}
+
+.memberDown {
+  -webkit-animation: memberDown 1s ease-in;
+  animation: memberDown 1s ease-in;
+}
+
+@keyframes memberDown {
+  0% {
+    -webkit-transform: translateY(-120%);
+    transform: translateY(-120%);
+  }
+  30% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  75% {
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
+  }
+  85% {
+    -webkit-transform: translateY(-3%);
+    transform: translateY(-3%);
+  }
+  95% {
+    -webkit-transform: translateY(2%);
+    transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes memberDown {
+  0% {
+    -webkit-transform: translateY(-120%);
+    transform: translateY(-120%);
+  }
+  30% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  75% {
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
+  }
+  85% {
+    -webkit-transform: translateY(-3%);
+    transform: translateY(-3%);
+  }
+  95% {
+    -webkit-transform: translateY(2%);
+    transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+.memberLeft {
+  -webkit-animation: memberLeft 1s ease-in;
+  animation: memberLeft 1s ease-in;
+}
+
+@keyframes memberLeft {
+  0% {
+    opacity: 0;
+    left: 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes memberLeft {
+  0% {
+    opacity: 0;
+    left: 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+
+/* ========================================================= */
+
+.member-body {
+  li > a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #222225;
+  }
+  i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: top;
+    background-image: url(../images/icon-member.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    .-(@i : 0) when (@i < 30) {
+      &.mem-ico@{i}{
+        background-position: 0 -(22px*@i);
+      }
+      .-((@i + 1));
+    }
+    .-;
+  }
+}
+
+.member-nav {
+  // border-style: dashed;
+  a.table-cell {
+    color: #222225;
+  }
+  .table-cell i {
+    margin: 0 auto;
+  }
+}
+
+// =======================以上常用==========================
+.self-nav {
+  a {
+    padding: 20px 0;
+  }
+}
+
+
+/* 公司个人中心 */
+
+.c-member-head {
+  background-image: url(../images/default-mem-top_bg2.png);
+  .avatar {
+    width: 18vw;
+    height: 18vw;
+    max-width: 70px;
+    max-height: 70px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  .info .name {
+    text-shadow: 0 0 2px rgba(66, 139, 204, 0.9);
+  }
+}
+
+
+/* ================================================= */

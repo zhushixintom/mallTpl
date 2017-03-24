@@ -1,0 +1,158 @@
+/*body*/
+.wrap{
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  table-layout: fixed;
+  word-break: break-all;
+ }
+body,.bg-body{
+	background-color: #efeff4;
+}
+.list-img{
+	width: 22vw;
+	height: 22vw;
+	max-width:100px;
+	max-height:100px;
+}
+.col-primary{
+	color: @color-primary;
+}
+.bg-primary{
+	background-color: @color-primary;
+}
+.colf{
+	color: #fff;
+}
+.col-30{
+	color: #303030;
+}
+.colae{
+	color: #aeaeae;
+}
+.col-4d{
+	color: #4d4d4d;
+}
+.col-7d{
+	color: #7d848b;
+}
+.colb{
+	color: #bbb;
+}
+.blue{
+	color: #498df7
+}
+.blue1{
+	color: #44a9ff
+}
+.ora{
+	color: #ff9000
+}
+.red{
+	color: #f04c4c;
+}
+.green{
+	color: #35a922;
+}
+.pink{
+	color: #f33fa5;
+}
+
+.bg-f1{
+	background-color: #f1f1f1;
+}
+.bg-red{
+	background-color: #f15151;
+}
+
+.p8{
+	padding: 8px;
+}
+.h50{
+	height: 50px;
+}
+
+.bt-f1{
+	border-top: 1px solid #f1f1f1;
+}
+.bb-f1{
+	border-bottom: 1px solid #f1f1f1;
+}
+.ma{
+	margin-right: auto;
+	margin-left: auto;
+}
+.bottom-fixed{
+	~ .main{
+		padding-bottom: 60px;
+	}
+}
+.top-fixed{
+	~ .main{
+		padding-top: 50px;
+	}
+}
+
+.last{
+	a:last-child,li:last-child,{
+		border-bottom: none;
+	}
+}
+.w50p{
+	width: 50%;
+}
+/* 定义图片的合集 */
+.d-item-pic-wrap{
+	.item-pic{
+		margin-right: 8px;
+		margin-bottom: 8px;
+	}
+}
+/* 5.10.1投票详情 */
+.join-list{
+	.item-pic{
+		width: ~"calc((100vw - 140px) / 5)";
+		height: ~"calc((100vw - 140px) / 5)";
+		max-width: 70px;
+		max-height: 70px;
+		overflow: visible;
+		img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+		.tag{
+			transform: scale(0.8);
+			-webkit-transform: scale(0.8);
+			transform-origin: right bottom;
+			-webkit-transform-origin: right bottom;
+			z-index: 3;
+			display: block;
+			padding: 0 8px;
+			font-size: 12px;
+			color: #fff;
+			line-height: 16px;
+			border-radius: 20px;
+			border:1px solid #fff;
+			position: absolute;
+			bottom: 0;
+			right:-5px;
+			&.tag-red{
+				background-color: #f56060;
+			}
+			&.tag-blue{
+				background-color: #5a9df8;
+			}
+		}
+	}
+}
+
+/* c-5.2企业员工名录 */
+.c-yuangong-avatar{
+	width: 16vw;
+	height: 16vw;
+	max-width: 70px;
+	max-height: 70px;
+}
+/* ================================================= */

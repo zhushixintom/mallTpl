@@ -1,0 +1,78 @@
+/* 按钮btn */
+
+.btn {
+  display: block;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+  &.btn-primary {
+    border: 1px solid @color-primary;
+    background-color: @color-primary;
+    color: #fff;
+  }
+  &.btn-outlined {
+    color: @color-primary;
+    border: 1px solid @color-primary;
+  }
+  &:active{
+    color:hsla(0,0%,100%,.4);
+    // background-color: #44b960;
+  }
+}
+
+@media screen and (min-device-width: 359px) {
+  .btn {
+    font-size: 18px;
+  }
+}
+
+.btn-mini {
+  display: inline-block;
+  min-width: 48px;
+  padding: 3px 10px;
+  text-align: center;
+  border: 1px #888888 solid;
+  color: #888888;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+  &.btn-mini_outlined {
+    border-color: @color-primary;
+    color: @color-primary;
+  }
+  &.btn-mini_solid {
+    background-color: @color-primary;
+    border-color: @color-primary;
+    color: #fff;
+  }
+  &.btn-mini_black {
+    border-color: #7f7f80;
+    color: #000;
+  }
+  &:active{
+    color:hsla(0,0%,100%,.4);
+    // background-color: #44b960;
+  }
+}
+
+// .btn-mini.btn-mini_gray {
+//   background-color: #cdcdcd;
+//   border-color: #888888;
+//   color: #333;
+// }
+
+/* ================================================= */

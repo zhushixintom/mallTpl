@@ -1,0 +1,111 @@
+/*util*/
+
+
+/* tab_nav */
+
+.tab_nav {
+  a {
+    color: #808080;
+    span {
+      display: block;
+      height: 44px;
+      line-height: 42px;
+      margin: 0 auto;
+    }
+    &.active {
+      span {
+        color: @color-primary;
+        border-bottom: 2px @color-primary solid;
+      }
+    }
+    &.short-item {
+      span {
+        display: inline-block;
+        height: 44px;
+        line-height: 42px;
+        padding: 0 2px;
+      }
+    }
+    &.short-item.active {
+      span {
+        color: @color-primary;
+        border-bottom: 2px @color-primary solid;
+      }
+    }
+  }
+}
+
+/*数量加减*/
+
+.buy_num {
+  display: block;
+  width: 102px;
+  overflow: hidden;
+  line-height: 32px;
+}
+
+.buy_num i {
+  background-color: #f8f8f8;
+  background-position: 0 0;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  ;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d4d4d4;
+  font-style: normal;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+.buy_num .plus {
+  background-image: url("../images/default-add.png");
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.buy_num .minus {
+  background-image: url("../images/default-minus.png");
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.buy_num .value {
+  display: inline-block;
+  width: 38px;
+  height: 32px;
+  border: 1px solid #d4d4d4;
+  border-left: none;
+  border-right: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*暂无的样式*/
+
+.nothing {
+  padding: 40px 0;
+}
+
+.nothing i {
+  display: block;
+  padding: 0 39%;
+}
+
+.nothing span {
+  display: block;
+}
+
+/* a-link */
+a.link{
+  background-position-x:~"-webkit-calc(100% - 10px)";
+  background-position-x:~"calc(100% - 10px)";
+  padding-right: 25px;
+  &:active{
+    background-color: #fafafa;
+  }
+}
+/* ================================================= */

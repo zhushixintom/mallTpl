@@ -1,0 +1,12 @@
+# ignore PSD files
+*.psd
+#*.zip
+#*.rar
+#*.via
+#*.tmp
+#*.err
+
+!/images
+!/images
+!/demos/backup
+!/weui

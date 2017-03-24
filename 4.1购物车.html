@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>4.1购物车</title>
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<section class="wrap">
+
+	<section class="main">
+
+		<ul class="buycart weui_cells_checkbox">
+			<li class="p10 bgf flex-box bb">
+				<label class="weui_check_label mr10 flex-grow-0" for="buy1">
+					<input type="checkbox" class="weui_check" name="checkbox1" id="buy1">
+					<i class="weui_icon_checked block"></i>
+				</label>
+				<a href="" class="block ba item-pic flex-grow-0">
+					<img src="images/index-tg1.jpg" alt="">
+				</a>
+				<div class="pl10 flex-grow-1 flex-box flex-self-stretch flex-col flex-between flex-col-stretch">
+					<a href="" class="multi-line fs15 col0">
+						外资公司注册
+					</a>
+					<div class="flex-box flex-between">
+						<span class="fs15 col0">¥88088.00</span>
+						<div class="bgf tc fs14 buy_num flex-grow-0">
+							<i class="fr plus"></i>
+							<input name="" type="text" class="fr tc value" value="1">
+							<i class="fr minus"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="p10 bgf flex-box bb">
+				<label class="weui_check_label mr10 flex-grow-0" for="buy2">
+					<input type="checkbox" class="weui_check" name="checkbox1" id="buy2">
+					<i class="weui_icon_checked block"></i>
+				</label>
+				<a href="" class="block ba item-pic flex-grow-0">
+					<img src="images/index-tg1.jpg" alt="">
+				</a>
+				<div class="pl10 flex-grow-1 flex-box flex-self-stretch flex-col flex-between flex-col-stretch">
+					<a href="" class="multi-line fs15 col0">
+						普吉岛7天往返含税机票(赠送5天wifi)
+					</a>
+					<div class="flex-box flex-between">
+						<span class="fs15 col0">¥88088.00</span>
+						<div class="bgf tc fs14 buy_num flex-grow-0">
+							<i class="fr plus"></i>
+							<input name="" type="text" class="fr tc value" value="1">
+							<i class="fr minus"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="p10 bgf flex-box bb">
+				<label class="weui_check_label mr10 flex-grow-0" for="buy3">
+					<input type="checkbox" class="weui_check" name="checkbox1" id="buy3">
+					<i class="weui_icon_checked block"></i>
+				</label>
+				<a href="" class="block ba item-pic flex-grow-0">
+					<img src="images/index-tg1.jpg" alt="">
+				</a>
+				<div class="pl10 flex-grow-1 flex-box flex-self-stretch flex-col flex-between flex-col-stretch">
+					<a href="" class="multi-line fs15 col0">
+						外资公司注册
+					</a>
+					<div class="flex-box flex-between">
+						<span class="fs15 col0">¥88088.00</span>
+						<div class="bgf tc fs14 buy_num flex-grow-0">
+							<i class="fr plus"></i>
+							<input name="" type="text" class="fr tc value" value="1">
+							<i class="fr minus"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+		</ul>
+
+		<a href="javascript:;" class="bgf ba br5 tc col9 buy_set">
+			<i class="Ico-set"></i><em>编辑</em>
+		</a>
+
+		<div class="buycart_submit">
+			<dl class="table bgf item-settle">
+				<dd class="table-cell vm pl10 weui_cells_checkbox" style="width:22%;">
+					<label class="weui_check_label block" for="all_buy">
+						<input type="checkbox" class="weui_check" name="check_all_buy" id="all_buy">
+						<i class="weui_icon_checked block fs14">全选</i>
+					</label>
+				</dd>
+				<dd class="table-cell vm tr pr5">
+					<p class="fs16 col0">总计：<b class="fs16 red">¥1280.0</b></p>
+					<p class="fs12 colb">(不含运费)</p>
+				</dd>
+				<dt class="table-cell vm tc bg-red">
+					<a href="" class="fs16 colf">去结算</a>
+				</dt>
+			</dl>
+		</div>
+
+		<div class="buycart_edit">
+			<dl class="table bgf item-settle">
+				<dd class="table-cell vm pl10 weui_cells_checkbox">
+					<label class="weui_check_label block" for="all_del">
+						<input type="checkbox" class="weui_check" name="check_all_del" id="all_del">
+						<i class="weui_icon_checked block fs14">全选</i>
+					</label>
+				</dd>
+				<dt class="table-cell vm tc">
+					<a href="" class="fs16 colf">删除</a>
+				</dt>
+			</dl>
+		</div>
+
+
+	</section>
+
+</section>
+
+  <script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+
+		<script>
+		$(function(){
+			// 购物车物品数量
+			$(document).on("click",".buy_num .plus",function() {
+				$this = $(this);
+				v = parseFloat($this.next().val());
+				$this.next().val(v+1);
+			});
+			$(document).on("click",".buy_num .minus",function() {
+				$this = $(this);
+				v = parseInt($this.prev().val());
+				if(v>1){
+					$this.prev().val(v-1);
+				}
+			});
+
+			// 购物车-全选
+			$(".item-settle .weui_check_label").on('click',function(){
+				var $this = $(this).find(".weui_check");
+				if(!$this.is(":checked")){
+					$this.prop({checked:true});
+					$(".buycart .weui_check").prop({checked:true});
+				}else{
+					$this.prop({checked:false});
+					$(".buycart .weui_check:checked").prop({checked:false});
+				}
+			});
+
+			// 购物车-底部功能切换
+			$(".buy_set").click(function(){
+				if (!$(this).hasClass('on')) {
+					$(this).addClass("on");
+					$(this).find("em").html("完成");
+					$(".buycart_submit").slideUp();
+					$(".buycart_edit").slideDown();
+					$(".weui_check:checked").prop({checked:false});
+				} else {
+					$(this).removeClass("on");
+					$(this).find("em").html("编辑");
+					$(".buycart_edit").slideUp();
+					$(".buycart_submit").slideDown();
+					$(".weui_check:checked").prop({checked:false});
+				}
+			});
+		});
+		</script>
+</body>
+</html>

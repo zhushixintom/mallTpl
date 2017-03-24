@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<title>4.2.1订单结算</title>
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<section class="wrap">
+
+	<div class="bottom-fixed">
+		<dl class="table bgf item-settle">
+			<dd class="table-cell bt tr vm pr10">
+				<p class="fs16 red">实付款：<b class="fs16">¥196.0</b></p>
+			</dd>
+			<dt class="table-cell vm">
+				<a href="" class="bg-red xilu_btn">去结算</a>
+				<!-- <button type="" class="bg_own xilu_btn">提交订单</button> -->
+			</dt>
+		</dl>
+	</div>
+
+	<section class="main">
+
+	<form action="">
+
+		<div class="p10 item-info item-default">
+			<a href="" class="fs14 col3 item-hd arrowR">
+				<span><i class="mr5 ico-user"></i>用户A</span>
+				<span class="ml10"><i class="mr5 ico-tel"></i>123****1234</span>
+				<span class="ml10 fs12 colf item-tag">默认地址</span>
+				<p class="pt10">上海徐汇区石龙路569号2号楼201室</p>
+			</a>
+			<!-- <a href="" class="flex-box flex-center" style="padding:20px 0;">
+				<em class="Ico-add1 mr10"></em>
+				<span class="fs16 col0">添加收货地址</span>
+			</a> -->
+		</div>
+
+		<ul class="mt10 index-group-list">
+			<li>
+				<a href="" class="p10 bgf flex-box">
+					<div class="item-pic flex-grow-0">
+						<img src="images/index-tg1.jpg" alt="">
+					</div>
+					<div class="pl10 flex-self-stretch flex-box flex-col flex-between flex-col-stretch flex-grow-1">
+						<p class="multi-line fs15 col0">
+							普吉岛7天往返含税机票(赠送5天wifi)
+						</p>
+						<div class="flex-box flex-between col-4d">
+							<span class="fs18"><em class="fs14">￥</em>688</span>
+							<span class="fs13">X1</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="mt5 fs14 col3 last">
+			<li class="flex-box box-b p15 bb bgf">
+				<div class="col6 w80 flex-grow-0">支付配送</div>
+				<div class="">
+					微信支付
+				</div>
+			</li>
+			<li class="flex-box box-b p15 bb bgf">
+				<div class="col6 w80 flex-grow-0">积分抵扣</div>
+				<div class="flex-box flex-between flex-grow-1">
+					<span class="fs12 col3">共1000积分，可抵扣100元</span>
+					<input class="weui_switch" type="checkbox">
+				</div>
+			</li>
+		</ul>
+
+		<!-- <ul class="mt10 bgf fs14 col3 last">
+			<li class="table box-b p15 bb invi_check">
+				<div class="table-cell vm col6 w80">开具发票</div>
+				<div class="table-cell vm">
+					<input class="fr weui_switch" type="checkbox">
+				</div>
+			</li>
+			<li class="table box-b p15 bb invi_hide">
+				<div class="table-cell vm col6 w80">发票类型</div>
+				<div class="table-cell vm arrowR">
+					<input name="" type="text" class="form_inp" placeholder="" value="电子发票">
+				</div>
+			</li>
+			<li class="table box-b p15 bb invi_hide">
+				<div class="table-cell vm col6 w80">发票抬头</div>
+				<div class="table-cell vm">
+					<input name="" type="text" class="form_inp" placeholder="请输入发票抬头">
+				</div>
+			</li>
+		</ul> -->
+
+		<ul class="mt5 bgf fs13 col3 pt5 pb10">
+			<li class="table plr15 mt5">
+				<div class="table-cell">商品金额</div>
+				<div class="table-cell red tr">¥668.00</div>
+			</li>
+			<li class="table plr15 mt5">
+				<div class="table-cell">优惠</div>
+				<div class="table-cell red tr">- ¥100.00</div>
+			</li>
+		</ul>
+
+		<div class="mt5 bgf p10 item-form">
+			<textarea name="" cols="" rows="" class="form_text" placeholder="选填：给我们留言 (45字以内)" id="show-alert"></textarea>
+		</div>
+
+
+
+	</form>
+
+	<script>
+	$(function(){
+		// 发票
+		/*$(".invi_check input[type='checkbox']").on("click",function(){
+			var checked = $(this).is(":checked");
+			if ( checked == true ){
+				$(".invi_hide").addClass("invi_show");
+			}else{
+				$(".invi_hide").removeClass("invi_show");
+			}
+		});*/
+
+	});
+	</script>
+
+	</section>
+
+
+
+</section>
+
+  <script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>
