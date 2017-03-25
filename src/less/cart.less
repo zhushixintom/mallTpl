@@ -1,16 +1,5 @@
 /*4.1购物车*/
 
-
-/*数量加减*/
-
-.buycart .weui_check_label {
-  width: 23px;
-  padding-right: 10px;
-}
-
-
-/* .buycart .buy_num{ position: absolute; right: 0; bottom: 0; } */
-
 .buy_set {
   display: inline-block;
   padding: 0 10px;
@@ -22,192 +11,30 @@
   z-index: 99;
 }
 
-.buycart_submit {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  right: 0;
-  /*  bottom:54px; */
-  z-index: 99;
-  bottom: 0;
-}
-
-.buycart_edit {
-  display: none;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  right: 0;
-  /*  bottom:54px; */
-  z-index: 99;
-  bottom: 0;
-}
-
-.buycart_edit .item-settle dt {
-  background-color: #f97160;
-}
-
-
-/*结算支付悬浮*/
-
 .item-settle {
   width: 100%;
   height: 50px;
+  dd p {
+    line-height: 1.2;
+  }
+  dt {
+    width: 30%;
+    a {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      background-color: @color-ora;
+    }
+  }
 }
 
-.item-settle dd p {
-  display: block;
-  line-height: 1.2;
+.buycart_edit .item-settle dt {
+  background-color: @color-ora;
 }
 
-.item-settle dt {
-  width: 30%;
+.buycart_submit .item-settle dt {
+  background-color: @color-danger;
 }
-
-.item-settle dt .xilu_btn {
-  line-height: 51px;
-  font-size: 16px;
-}
-
-.buycart .item-pic {
-  /* width: 55px; */
-  /* height: 55px; */
-  width: 22vw;
-  height: 22vw;
-}
-
-
-/*4.3.1地址管理*/
-
-
-/*地址管理*/
-
-.item-info i {
-  display: inline-block;
-  vertical-align: middle;
-  background-image: url(../images/icon-info.png);
-  background-size: 19px auto;
-  background-repeat: no-repeat;
-}
-
-.item-info i.ico-user {
-  width: 19px;
-  height: 19px;
-  background-position: 0 0;
-  margin-top: -3px;
-}
-
-.item-info i.ico-tel {
-  width: 19px;
-  height: 19px;
-  background-position: 0 -19px;
-  margin-top: -3px;
-}
-
-.item-info i.ico-edit {
-  width: 15px;
-  height: 15px;
-  background-position: 0 -38px;
-  margin-top: -3px;
-}
-
-.item-info i.ico-del {
-  width: 15px;
-  height: 15px;
-  background-position: 0 -57px;
-  margin-top: -3px;
-}
-
-.item-info .item-ft .set {
-  padding: 2px 5px;
-  color: #ff5831;
-  border: 1px solid #ff5831;
-}
-
-.item-info .item-tag {
-  background-color: #f04848;
-  line-height: 1.8em;
-  padding: 0px 4px;
-  display: inline-block;
-}
-
-.item-info .item-ft .link {
-  padding-top: 2px;
-}
-
-
-/*默认地址管理*/
-
-.item-default {
-  background: #fffdf9;
-  position: relative;
-}
-
-.item-default:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 10px;
-  background-image: url(../images/icon-info1.png);
-  background-size: auto 2px;
-  background-repeat: repeat-x;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-}
-
-.item-default .status {
-  background-color: #ff7801;
-  padding: 3px 5px;
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  z-index: 9;
-}
-
-/*  */
-
-[class*="Ico-"] {
-  display: inline-block;
-  vertical-align: middle;
-  background-image: url("../images/ico-com.png");
-  background-size: 25px auto;
-  background-repeat: no-repeat;
-}
-
-.Ico-add {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: -6px;
-  margin-right: 10px;
-  background-position: 0 0;
-}
-
-.Ico-set {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin: 3px auto 0;
-  background-position: 0 -25px;
-}
-
-.Ico-sets {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin: 3px auto 0;
-  background-position: 0 -50px;
-}
-
-.Ico-add1 {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: -6px;
-  margin-right: 10px;
-  background-position: 0 -75px;
-}
-
 
 /* ================================================= */

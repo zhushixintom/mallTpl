@@ -22,26 +22,60 @@
 <body>
 <section class="wrap">
 
+	<div class="buycart_submit bottom-fixed">
+		<dl class="table bgf item-settle">
+			<dd class="table-cell vm pl10 weui_cells_checkbox" style="width:22%;">
+				<label class="weui_check_label block" for="all_buy">
+					<input type="checkbox" class="weui_check" name="check_all_buy" id="all_buy">
+					<i class="weui_icon_checked block fs14">全选</i>
+				</label>
+			</dd>
+			<dd class="table-cell vm tr pr5">
+				<p class="fs16 col0">总计：<b class="fs16 red">¥<em class="total-price">0.000</em></b></p>
+				<p class="fs12 colb">(不含运费)</p>
+			</dd>
+			<dt class="table-cell vm tc">
+				<a href="" class="fs16 colf">去结算</a>
+			</dt>
+		</dl>
+	</div>
+
+	<div class="buycart_edit hide bottom-fixed">
+		<dl class="table bgf item-settle">
+			<dd class="table-cell vm pl10 weui_cells_checkbox">
+				<label class="weui_check_label block" for="all_del">
+					<input type="checkbox" class="weui_check" name="check_all_del" id="all_del">
+					<i class="weui_icon_checked block fs14">全选</i>
+				</label>
+			</dd>
+			<dt class="table-cell vm tc">
+				<a href="" class="fs16 colf">删除</a>
+			</dt>
+		</dl>
+	</div>
+
 	<section class="main">
 
-		<ul class="buycart weui_cells_checkbox">
+		<ul class="cart-list weui_cells_checkbox">
 			<li class="p10 bgf flex-box bb">
-				<label class="weui_check_label mr10 flex-grow-0" for="buy1">
-					<input type="checkbox" class="weui_check" name="checkbox1" id="buy1">
+				<label class="weui_check_label w25 mr10 flex-grow-0" for="buy1">
+					<input type="checkbox" class="weui_check" name="cart" id="buy1">
 					<i class="weui_icon_checked block"></i>
 				</label>
-				<a href="" class="block ba item-pic flex-grow-0">
-					<img src="images/index-tg1.jpg" alt="">
-				</a>
+				<div class="ba flex-grow-0 m-col-25">
+					<a href="" class="block item-pic">
+						<img src="images/index-tg1.jpg" alt="">
+					</a>
+				</div>
 				<div class="pl10 flex-grow-1 flex-box flex-self-stretch flex-col flex-between flex-col-stretch">
-					<a href="" class="multi-line fs15 col0">
+					<a href="" class="multi-line fs14 col0">
 						外资公司注册
 					</a>
 					<div class="flex-box flex-between">
-						<span class="fs15 col0">¥88088.00</span>
+						<span class="fs14 col0">¥<em class="price">88.00</em></span>
 						<div class="bgf tc fs14 buy_num flex-grow-0">
 							<i class="fr plus"></i>
-							<input name="" type="text" class="fr tc value" value="1">
+							<input name="" type="text" class="fr tc num" value="1">
 							<i class="fr minus"></i>
 						</div>
 					</div>
@@ -49,21 +83,23 @@
 			</li>
 			<li class="p10 bgf flex-box bb">
 				<label class="weui_check_label mr10 flex-grow-0" for="buy2">
-					<input type="checkbox" class="weui_check" name="checkbox1" id="buy2">
+					<input type="checkbox" class="weui_check" name="cart" id="buy2">
 					<i class="weui_icon_checked block"></i>
 				</label>
-				<a href="" class="block ba item-pic flex-grow-0">
-					<img src="images/index-tg1.jpg" alt="">
-				</a>
+				<div class="ba flex-grow-0 m-col-25">
+					<a href="" class="block item-pic">
+						<img src="images/index-tg1.jpg" alt="">
+					</a>
+				</div>
 				<div class="pl10 flex-grow-1 flex-box flex-self-stretch flex-col flex-between flex-col-stretch">
-					<a href="" class="multi-line fs15 col0">
+					<a href="" class="multi-line fs14 col0">
 						普吉岛7天往返含税机票(赠送5天wifi)
 					</a>
 					<div class="flex-box flex-between">
-						<span class="fs15 col0">¥88088.00</span>
+						<span class="fs14 col0">¥<em class="price">188.00</em></span>
 						<div class="bgf tc fs14 buy_num flex-grow-0">
 							<i class="fr plus"></i>
-							<input name="" type="text" class="fr tc value" value="1">
+							<input name="" type="text" class="fr tc num" value="1">
 							<i class="fr minus"></i>
 						</div>
 					</div>
@@ -71,66 +107,33 @@
 			</li>
 			<li class="p10 bgf flex-box bb">
 				<label class="weui_check_label mr10 flex-grow-0" for="buy3">
-					<input type="checkbox" class="weui_check" name="checkbox1" id="buy3">
+					<input type="checkbox" class="weui_check" name="cart" id="buy3">
 					<i class="weui_icon_checked block"></i>
 				</label>
-				<a href="" class="block ba item-pic flex-grow-0">
-					<img src="images/index-tg1.jpg" alt="">
-				</a>
+				<div class="ba flex-grow-0 m-col-25">
+					<a href="" class="block item-pic">
+						<img src="images/index-tg1.jpg" alt="">
+					</a>
+				</div>
 				<div class="pl10 flex-grow-1 flex-box flex-self-stretch flex-col flex-between flex-col-stretch">
-					<a href="" class="multi-line fs15 col0">
+					<a href="" class="multi-line fs14 col0">
 						外资公司注册
 					</a>
 					<div class="flex-box flex-between">
-						<span class="fs15 col0">¥88088.00</span>
+						<span class="fs14 col0">¥<em class="price">288.00</em></span>
 						<div class="bgf tc fs14 buy_num flex-grow-0">
 							<i class="fr plus"></i>
-							<input name="" type="text" class="fr tc value" value="1">
+							<input name="" type="text" class="fr tc num" value="1">
 							<i class="fr minus"></i>
 						</div>
 					</div>
 				</div>
 			</li>
-
-
 		</ul>
 
 		<a href="javascript:;" class="bgf ba br5 tc col9 buy_set">
 			<i class="Ico-set"></i><em>编辑</em>
 		</a>
-
-		<div class="buycart_submit">
-			<dl class="table bgf item-settle">
-				<dd class="table-cell vm pl10 weui_cells_checkbox" style="width:22%;">
-					<label class="weui_check_label block" for="all_buy">
-						<input type="checkbox" class="weui_check" name="check_all_buy" id="all_buy">
-						<i class="weui_icon_checked block fs14">全选</i>
-					</label>
-				</dd>
-				<dd class="table-cell vm tr pr5">
-					<p class="fs16 col0">总计：<b class="fs16 red">¥1280.0</b></p>
-					<p class="fs12 colb">(不含运费)</p>
-				</dd>
-				<dt class="table-cell vm tc bg-red">
-					<a href="" class="fs16 colf">去结算</a>
-				</dt>
-			</dl>
-		</div>
-
-		<div class="buycart_edit">
-			<dl class="table bgf item-settle">
-				<dd class="table-cell vm pl10 weui_cells_checkbox">
-					<label class="weui_check_label block" for="all_del">
-						<input type="checkbox" class="weui_check" name="check_all_del" id="all_del">
-						<i class="weui_icon_checked block fs14">全选</i>
-					</label>
-				</dd>
-				<dt class="table-cell vm tc">
-					<a href="" class="fs16 colf">删除</a>
-				</dt>
-			</dl>
-		</div>
-
 
 	</section>
 
@@ -151,29 +154,38 @@
 		<script>
 		$(function(){
 			// 购物车物品数量
-			$(document).on("click",".buy_num .plus",function() {
+			$(".buy_num .plus").on("click",function() {
 				$this = $(this);
 				v = parseFloat($this.next().val());
 				$this.next().val(v+1);
+				getPriceTotal();
 			});
-			$(document).on("click",".buy_num .minus",function() {
+			$(".buy_num .minus").on("click",function() {
 				$this = $(this);
 				v = parseInt($this.prev().val());
 				if(v>1){
 					$this.prev().val(v-1);
-				}
+				};
+				getPriceTotal();
 			});
 
 			// 购物车-全选
-			$(".item-settle .weui_check_label").on('click',function(){
-				var $this = $(this).find(".weui_check");
-				if(!$this.is(":checked")){
-					$this.prop({checked:true});
-					$(".buycart .weui_check").prop({checked:true});
+			$(".item-settle .weui_check").on('change',function(){
+				var $this = $(this);
+				if($this.is(":checked")){
+					$(".cart-list .weui_check").prop({"checked":true});
 				}else{
-					$this.prop({checked:false});
-					$(".buycart .weui_check:checked").prop({checked:false});
-				}
+					$(".cart-list .weui_check:checked").prop({"checked":false});
+				};
+				getPriceTotal();
+			});
+			$(".cart-list .weui_check").each(function(){
+				$(this).on("change",function(){
+					if(!$(this).is(":checked")){
+						$(".item-settle .weui_check").prop({"checked":false});
+					};
+				getPriceTotal();
+				});
 			});
 
 			// 购物车-底部功能切换
@@ -183,16 +195,31 @@
 					$(this).find("em").html("完成");
 					$(".buycart_submit").slideUp();
 					$(".buycart_edit").slideDown();
-					$(".weui_check:checked").prop({checked:false});
+					// $(".weui_check:checked").prop({"checked":false});
 				} else {
 					$(this).removeClass("on");
 					$(this).find("em").html("编辑");
 					$(".buycart_edit").slideUp();
 					$(".buycart_submit").slideDown();
-					$(".weui_check:checked").prop({checked:false});
+					// $(".weui_check:checked").prop({"checked":false});
 				}
+				getPriceTotal();
 			});
 		});
+
+
+    //获取总价
+    function getPriceTotal()
+    {
+      var priceTotal = 0;
+      $("input[name='cart']:checked").each(function(){
+        var num = $(this).parents('li').find("input.num").val();
+        var price = $(this).parents('li').find('.price').text();
+        priceTotal += parseInt(num)*parseFloat(price);
+      })
+
+      $('.total-price').html(priceTotal.toFixed(2));
+    };
 		</script>
 </body>
 </html>

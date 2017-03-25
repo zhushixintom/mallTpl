@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>4.2.1订单结算</title>
+	<title>4.2订单结算</title>
   <% include _head.html %>
 </head>
 <body>
@@ -13,8 +13,7 @@
 				<p class="fs16 red">实付款：<b class="fs16">¥196.0</b></p>
 			</dd>
 			<dt class="table-cell vm">
-				<a href="" class="bg-red xilu_btn">去结算</a>
-				<!-- <button type="" class="bg_own xilu_btn">提交订单</button> -->
+				<a href="" class="tc colf">去结算</a>
 			</dt>
 		</dl>
 	</div>
@@ -23,12 +22,12 @@
 
 	<form action="">
 
-		<div class="p10 item-info item-default">
-			<a href="" class="fs14 col3 item-hd arrowR">
-				<span><i class="mr5 ico-user"></i>用户A</span>
-				<span class="ml10"><i class="mr5 ico-tel"></i>123****1234</span>
-				<span class="ml10 fs12 colf item-tag">默认地址</span>
-				<p class="pt10">上海徐汇区石龙路569号2号楼201室</p>
+		<div class="address-default">
+			<a href="" class="fs14 col3 p10 block arrowR">
+				<span><i class="mr5 ico-addr-user"></i>用户A</span>
+				<span class="ml10"><i class="mr5 ico-addr-tel"></i>123****1234</span>
+				<span class="ml10 fs12 colf br3 address-tag">默认地址</span>
+				<p class="pt10 fs13">上海徐汇区石龙路569号2号楼201室</p>
 			</a>
 			<!-- <a href="" class="flex-box flex-center" style="padding:20px 0;">
 				<em class="Ico-add1 mr10"></em>
@@ -36,18 +35,20 @@
 			</a> -->
 		</div>
 
-		<ul class="mt10 index-group-list">
+		<ul class="mt10">
 			<li>
 				<a href="" class="p10 bgf flex-box">
-					<div class="item-pic flex-grow-0">
-						<img src="images/index-tg1.jpg" alt="">
+					<div class="flex-grow-0 m-col-25">
+						<p class="item-pic">
+							<img src="images/index-tg1.jpg" alt="">
+						</p>
 					</div>
 					<div class="pl10 flex-self-stretch flex-box flex-col flex-between flex-col-stretch flex-grow-1">
 						<p class="multi-line fs15 col0">
 							普吉岛7天往返含税机票(赠送5天wifi)
 						</p>
-						<div class="flex-box flex-between col-4d">
-							<span class="fs18"><em class="fs14">￥</em>688</span>
+						<div class="flex-box flex-between col3">
+							<span class="fs18 red"><em class="fs14">￥</em>688</span>
 							<span class="fs13">X1</span>
 						</div>
 					</div>
@@ -55,14 +56,14 @@
 			</li>
 		</ul>
 
-		<ul class="mt5 fs14 col3 last">
-			<li class="flex-box box-b p15 bb bgf">
+		<ul class="mt10 fs14 col3 last">
+			<li class="flex-box box-b p10 bb bgf">
 				<div class="col6 w80 flex-grow-0">支付配送</div>
 				<div class="">
 					微信支付
 				</div>
 			</li>
-			<li class="flex-box box-b p15 bb bgf">
+			<li class="flex-box box-b p10 bb bgf">
 				<div class="col6 w80 flex-grow-0">积分抵扣</div>
 				<div class="flex-box flex-between flex-grow-1">
 					<span class="fs12 col3">共1000积分，可抵扣100元</span>
@@ -71,28 +72,28 @@
 			</li>
 		</ul>
 
-		<!-- <ul class="mt10 bgf fs14 col3 last">
-			<li class="table box-b p15 bb invi_check">
+		<ul class="mt10 bgf fs14 col3 last">
+			<li class="table box-b p10 invi_check">
 				<div class="table-cell vm col6 w80">开具发票</div>
 				<div class="table-cell vm">
 					<input class="fr weui_switch" type="checkbox">
 				</div>
 			</li>
-			<li class="table box-b p15 bb invi_hide">
+			<li class="table box-b p10 bt invi_hide hide">
 				<div class="table-cell vm col6 w80">发票类型</div>
 				<div class="table-cell vm arrowR">
 					<input name="" type="text" class="form_inp" placeholder="" value="电子发票">
 				</div>
 			</li>
-			<li class="table box-b p15 bb invi_hide">
+			<li class="table box-b p10 bt invi_hide hide">
 				<div class="table-cell vm col6 w80">发票抬头</div>
 				<div class="table-cell vm">
 					<input name="" type="text" class="form_inp" placeholder="请输入发票抬头">
 				</div>
 			</li>
-		</ul> -->
+		</ul>
 
-		<ul class="mt5 bgf fs13 col3 pt5 pb10">
+		<ul class="mt10 bgf fs13 col3 pt5 pb10">
 			<li class="table plr15 mt5">
 				<div class="table-cell">商品金额</div>
 				<div class="table-cell red tr">¥668.00</div>
@@ -103,28 +104,14 @@
 			</li>
 		</ul>
 
-		<div class="mt5 bgf p10 item-form">
-			<textarea name="" cols="" rows="" class="form_text" placeholder="选填：给我们留言 (45字以内)" id="show-alert"></textarea>
+		<div class="mt10 bgf p10">
+			<textarea name="" cols="5" rows="5" class="form_text" placeholder="选填：给我们留言 (45字以内)" id="show-alert"></textarea>
 		</div>
 
 
 
 	</form>
 
-	<script>
-	$(function(){
-		// 发票
-		/*$(".invi_check input[type='checkbox']").on("click",function(){
-			var checked = $(this).is(":checked");
-			if ( checked == true ){
-				$(".invi_hide").addClass("invi_show");
-			}else{
-				$(".invi_hide").removeClass("invi_show");
-			}
-		});*/
-
-	});
-	</script>
 
 	</section>
 
@@ -132,7 +119,21 @@
 
 </section>
 
-  <% include _foot.html %>
+<% include _foot.html %>
 
+<script>
+$(function(){
+	// 发票
+	$(".invi_check input[type='checkbox']").on("click",function(){
+		var checked = $(this).is(":checked");
+		if ( checked == true ){
+			$(".invi_hide").removeClass("hide");
+		}else{
+			$(".invi_hide").addClass("hide");
+		}
+	});
+
+});
+</script>
 </body>
 </html>

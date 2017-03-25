@@ -1,4 +1,4 @@
-/*  */
+/* 5.5.1订单中心 */
 .order_nav{
 	>a{
 		padding: 10px 0;
@@ -17,5 +17,110 @@
 			}
 		}
 	}
+}
+
+/* 4.2订单结算 默认地址 */
+
+.address-default {
+  background: #fffdf9;
+  position: relative;
+  .address-tag {
+    background-color: #f04848;
+    line-height: 1.8em;
+    padding: 0px 4px;
+    display: inline-block;
+  }
+}
+
+.address-default:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-image: url(../images/icon-address1.png);
+  background-size: auto 2px;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+
+/*4.3.1地址管理*/
+
+//地址管理icon
+i[class*="ico-addr-"] {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/icon-address.png);
+  background-size: 19px auto;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  width: 19px;
+  height: 19px;
+}
+
+.ico-addr-user {}
+.ico-addr-tel {
+  background-position: 0 -19px;
+}
+.ico-addr-edit {
+  width: 15px;
+  height: 15px;
+  background-position: 0 -38px;
+  margin-right: 3px;
+  top: 1px;
+}
+.ico-addr-del {
+  width: 15px;
+  height: 15px;
+  background-position: 0 -57px;
+  margin-right: 3px;
+  top: 1px;
+}
+
+/* Ico */
+
+[class*="Ico-"] {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../images/ico-com.png");
+  background-size: 25px auto;
+  background-repeat: no-repeat;
+}
+
+.Ico-add {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: -6px;
+  margin-right: 10px;
+  background-position: 0 0;
+}
+
+.Ico-set {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 3px auto 0;
+  background-position: 0 -25px;
+}
+
+.Ico-sets {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 3px auto 0;
+  background-position: 0 -50px;
+}
+
+.Ico-add1 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: -6px;
+  margin-right: 10px;
+  background-position: 0 -75px;
 }
 /* ======================================================== */

@@ -129,7 +129,8 @@ label{user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-s
 /*以下斟酌*/
 
 /*表单*/
-button,select,textarea,input:not([type="radio"]):not([type="checkbox"]){border:0;resize: none}
+/* button,select,textarea,input:not([type="radio"]):not([type="checkbox"]){border:0;resize: none} */
+.form_inp,.form_sel,.form_text{border: 0px;width: 100%;resize:none;	}
 
 /*提示*/
 .hint-num{ position: relative;}
