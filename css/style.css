@@ -252,6 +252,8 @@ body,
 .inp-block select,
 .inp-block textarea {
   padding: 12px 0;
+  width: 100%;
+  border: 0;
 }
 .login-wrap .code-wrap {
   margin-left: 18px;
