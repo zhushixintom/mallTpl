@@ -117,7 +117,7 @@ label{user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-s
 .left-line:before{position:absolute;content: "";display: block;width: 2px;height: 70%;left:0;top:15%;background-color: #00bb3b}
 
 /*右箭头*/
-.arrowR{/* display: block; */ padding-right: 20px; background-image: url(../images/default-icon_arrowR.png);background-position-x: -webkit-calc(100% - 8px);background-position-x: calc(100% - 8px);background-position-y: 50%;background-repeat: no-repeat; background-size: 9px;}
+.arrowR{/* display: block; */ padding-right: 20px; background-image: url(../images/default-icon_arrowR.png);background-position-x: -webkit-calc(100% - 10px);background-position-x: calc(100% - 10px);background-position-y: 50%;background-repeat: no-repeat; background-size: 9px;}
 
 /* 图片 - 列表 注意当有border的时候需要给他的父级 */
 .item-pic{ position: relative; overflow: hidden; padding-top: 100%;line-height: 0;}

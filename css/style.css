@@ -480,9 +480,36 @@ body,
 a.link {
   background-position-x: calc(100% - 10px);
   padding-right: 25px;
+  display: block;
 }
 a.link:active {
   background-color: #fafafa;
+}
+/* to-top style*/
+.to-top {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  bottom: 20%;
+  right: 10px;
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  padding-top: 9px;
+  border-radius: 50%;
+  background-color: rgba(241, 241, 241, 0.9);
+  z-index: 999;
+}
+.to-top .ico-top {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/icon-top.png);
+  background-repeat: no-repeat;
+  background-size: 25px auto;
+  vertical-align: -4px;
+  position: relative;
 }
 /* ================================================= */
 /*1.1首页*/
@@ -605,12 +632,6 @@ a.link:active {
   background-size: 50px auto;
   position: relative;
   background-position-x: 0;
-}
-.Icon-building {
-  width: 22px;
-  height: 22px;
-  top: -2px;
-  margin-right: 2px;
 }
 /* ========================================================== */
 /*cells*/
@@ -880,10 +901,10 @@ i.form-ico.form-ico17 {
   font-size: 16px;
   background-color: #fa8631;
 }
-.buycart_edit .item-settle dt {
+.buycart_edit .item-settle dt a {
   background-color: #fa8631;
 }
-.buycart_submit .item-settle dt {
+.buycart_submit .item-settle dt a {
   background-color: #f6383a;
 }
 /* ================================================= */
