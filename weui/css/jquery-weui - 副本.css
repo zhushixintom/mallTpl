@@ -625,8 +625,10 @@ body {
 }
 .weui_dialog,
 .weui_toast {
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  /* -webkit-transition-duration: .2s;
+          transition-duration: .2s; */
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
   opacity: 0;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -689,16 +691,14 @@ body {
   width: auto;
   /* height: 45px; */
   border-radius: 25px;
-  margin-left: 0;
-  /* -webkit-transform: scale(0.9) translate3d(-50%, 0, 0);
+  margin-left: 0;/*
+  -webkit-transform: scale(0.9) translate3d(-50%, 0, 0);
           transform: scale(0.9) translate3d(-50%, 0, 0); */
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
-.weui_toast_text.weui_toast_visible {/*
-  -webkit-transform: scale(1) translate3d(-50%, 0, 0);
+.weui_toast_text.weui_toast_visible {
+  /* -webkit-transform: scale(1) translate3d(-50%, 0, 0);
           transform: scale(1) translate3d(-50%, 0, 0); */
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
