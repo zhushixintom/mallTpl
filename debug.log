@@ -137,3 +137,30 @@
 [0316/201509.983:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4ba0048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
 [0316/201509.983:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
 [0325/195427.176:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0401/220239.913:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.951:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220239.965:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0401/220240.049:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4f10048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0401/220240.049:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
+[0401/220240.049:ERROR:process_reader_win.cc(233)] ReadMemory at 0x49a0048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0401/220240.049:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
+[0401/220240.049:ERROR:process_reader_win.cc(233)] ReadMemory at 0x5160048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0401/220240.049:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4d30048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0401/220240.106:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
+[0401/220240.106:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
+[0401/221631.273:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0401/222151.431:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)

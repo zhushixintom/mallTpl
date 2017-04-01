@@ -585,6 +585,11 @@ a.link:active {
   position: relative;
   background-position-x: 0;
 }
+.Icon-star {
+  width: 18px;
+  height: 18px;
+  top: -2px;
+}
 /* ========================================================== */
 /*cells*/
 .m-cell {
