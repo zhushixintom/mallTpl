@@ -599,10 +599,10 @@ a.link:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: top;
-      align-items: top;
+  -ms-flex-align: start;
+      align-items: start;
 }
-.m-cell.flex-center {
+.m-cell.flex-col-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
