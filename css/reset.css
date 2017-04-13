@@ -30,7 +30,7 @@ img{max-width:100%;}
 /*全局*/
 html{height: 100%;}
 body{min-height: 100%;}
-body {font:63%/1.5 "微软雅黑",tahoma,arial,\5b8b\4f53; overflow-x: hidden;}
+body {font:63%/1.5 "PingFangSC-Regular","微软雅黑",tahoma,arial,\5b8b\4f53; overflow-x: hidden;}
 /*解决上下拉动滚动条时卡顿、慢, ios中是个bug，当body实际高度不足时，会遮盖底部fixed的元素*/
 /* body {-webkit-overflow-scrolling: touch;overflow-scrolling: touch;} */
 h1{font-size:1.8em;}h2{font-size:1.4em;}h3{font-size:1em;}
