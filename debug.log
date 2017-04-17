@@ -164,3 +164,26 @@
 [0401/220240.106:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
 [0401/221631.273:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
 [0401/222151.431:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0417/100844.538:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.571:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.572:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.578:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0417/100844.636:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4f80048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0417/100844.637:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
+[0417/100844.637:ERROR:process_reader_win.cc(233)] ReadMemory at 0xcb0048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0417/100844.637:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
+[0417/100844.693:ERROR:process_reader_win.cc(233)] ReadMemory at 0x5590048 of 32768 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0417/100844.693:WARNING:pe_image_annotations_reader.cc(65)] could not read simple annotations from C:\Program Files (x86)\Google\Chrome\Application\57.0.2987.98\chrome_elf.dll
