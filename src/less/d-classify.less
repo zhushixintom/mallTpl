@@ -1,0 +1,46 @@
+/* 2.2分类-横向滚动 */
+
+.know-nav {
+  overflow: auto;
+  white-space: nowrap;
+  a {
+    margin-right: 18px;
+    color: #626262;
+    position: relative;
+    display: block;
+    padding: 12px 0;
+    &.on {
+      &:after{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: @color-primary;
+      }
+      color:@color-primary;
+      -webkit-order: -1;
+      order: -1;
+    }
+  }
+}
+
+.course-nav__search{
+  padding: 0px 0px 0px 15px;
+  position: relative;
+  // -webkit-box-shadow: -1px 0 10px -3px rgba(0,0,0,0.5);
+  // box-shadow: -1px 0 10px -3px rgba(0,0,0,0.5);
+  &:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 4px;
+    border-right: 1px solid #d9d9d9;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(211,211,211,0), rgba(211,211,211,0.2));
+  }
+}
