@@ -12,29 +12,35 @@
 		<section class="login-wrap fs13">
 			<form action="register.php" id="registerForm" class="flex-box flex-col flex-col-stretch flex-between" style="min-height: 100vh;padding:30px 25px 20px;">
 				<div>
-					<!-- <img src="images/logo.png" alt="" class="block ma w100"> -->
 
-					<div class="inp-block">
-						<input type="tel" id="mobile" class="" placeholder="你的手机号" name="mobile">
+					<!-- <div class="logo-wrap">
+						<img src="images/logo.png" alt="" class="block ma w100">
+					</div> -->
+
+					<div class="inp-block flex-box">
+						<i class="ico-login1 block"></i>
+						<input type="tel" id="mobile" class="flex-grow-1" placeholder="你的手机号" name="mobile">
 					</div>
 
-					<div class="mt10 flex-box flex-col-stretch">
-						<div class="inp-block flex-grow-1">
-							<input type="text" id="picCode" class="" placeholder="输入验证码" name="picCode">
-						</div>
-						<div class="code-wrap flex-grow-0">
-							<img src="images/default-code.png" alt="" class="block">
-						</div>
+				<!-- 	<div class="mt10 flex-box flex-col-stretch">
+					<div class="inp-block flex-grow-1">
+						<input type="text" id="picCode" class="" placeholder="输入验证码" name="picCode">
 					</div>
+					<div class="code-wrap flex-grow-0">
+						<img src="images/default-code.png" alt="" class="block">
+					</div>
+				</div> -->
 
 					<div class="mt10 inp-block flex-box">
-						<input type="text" id="msgCode" class=" flex-grow-1" placeholder="短信验证码" name="msgCode">
+						<i class="ico-login2 block"></i>
+						<input type="text" id="msgCode" class="flex-grow-1" placeholder="短信验证码" name="msgCode">
 						<!-- <a href="javascript:;" class="flex-grow-0 col6">点击获取</a> -->
 						<a href="javascript:;" class="flex-grow-0 col9">56s后重新获取</a>
 					</div>
 
-					<div class="mt10 inp-block">
-						<input type="password" id="pwd" class="" placeholder="密码（字母，数字，至少6位）" name="pwd">
+					<div class="mt10 inp-block flex-box">
+						<i class="ico-login3 block"></i>
+						<input type="password" id="pwd" class="flex-grow-1" placeholder="密码（字母，数字，至少6位）" name="pwd">
 					</div>
 
 					<div class="mt10 inp-block">
@@ -53,7 +59,7 @@
 							<input type="checkbox" id="agree" class="mr5">
 							<span class="colae">我已阅读并同意</span>
 						</label>
-							<a href="" class="blue">《***平台注册协议》</a>
+							<a href="javascript:;" data-target="#protocol" class="blue open-popup">《****注册协议》</a>
 					</div>
 				</div>
 				<div class="pt15 mt15 bt">
@@ -65,6 +71,16 @@
 	</section>
 </section>
 
+<section id="protocol" class="weui-popup-container">
+  <div class="weui-popup-overlay"></div>
+  <div class="weui-popup-modal bgf">
+    <div class="proto-content fs13 col3">
+    	<p class="fs15 tc pb10">注册协议</p>
+    	你的内容放在<br >这里你的内容放在这里你的内容放在这里你的内容放在这里你的内容放在这里你的内容放在这里你的内<br >容放在这里你的内容放在这里你的内容<br >放在这里你的内容放<br >在这里你的<br >内容放在这里你的内容放在这里你的内<br >容放在这里你的内容放在这里你的内容放在这里你的内容放在这里你的内容放在这里<br >你的内容放<br >在这里<br >你的内容放在这里你的内容放在这里你<br >内容放在这里你的内容<br >放在这里你的<br >内容放在这里你的内容放在这里你的内容放<br >在这里你的内容放在这里你的内容放在这里你的内容放在这里你的内容放在这里...<br >放在这里你的内容放<br >在这里你的<br >内容放在这里你的内容放在这里你的内<br >容放在这里你的内容放在这里你的内容放在这里你的内容放在这里你的内容放在这里<br >你的内容放<br >在这里<br >你的内容放在这里你的内容放在这里你<br >内容放在这里你的内容<br >放在这里你的<br >内容放在这里你的内容放在这里你的内容放<br >在这里你的内容放在这里你的内容放在这里你的内容放在这里你的内容放在这里...
+    </div>
+    <a href="javascript:;" class="close-popup btn btn-primary">确　定</a>
+  </div>
+</section>
 <% include _foot.html %>
 <script>
 	//定义flag发送验证码

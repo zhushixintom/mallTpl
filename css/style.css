@@ -187,6 +187,9 @@ body,
   width: 100%;
   border: 0;
 }
+.logo-wrap {
+  padding: 10% 0 15%;
+}
 .login-wrap .code-wrap {
   margin-left: 18px;
   max-width: 85px;
@@ -205,6 +208,43 @@ body,
   vertical-align: middle;
   position: relative;
   top: -1px;
+}
+[class*="ico-login"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("../images/icon-login.png");
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  position: relative;
+  background-position-x: 0;
+  margin-right: 10px;
+}
+[class*="ico-login"].block {
+  display: block;
+}
+.ico-login2 {
+  background-position-y: -22px;
+}
+.ico-login3 {
+  background-position-y: -44px;
+}
+#protocol .weui-popup-modal {
+  height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+}
+#protocol .weui-popup-modal .proto-content {
+  padding: 15px;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+#protocol .weui-popup-modal .close-popup {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 /* ===================================================== */
 /*m-label 自适应*/
