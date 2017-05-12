@@ -160,51 +160,6 @@ button.xilu_btn:focus,input.xilu_btn:focus{ outline: 0; }
 @media screen and (min-device-width: 356px){
 	.fs10{ font-size: 11px;}.fs11{ font-size: 12px;}.fs12{ font-size: 13px;}.fs13{ font-size: 14px;}.fs14{ font-size: 16px;}.fs15{ font-size: 17px;}.fs16{ font-size: 18px;}.fs18{ font-size: 20px;}.fs20{ font-size: 24px;}.fs24{ font-size: 28px;}.fs30{ font-size: 34px;}.fs40{ font-size: 46px;}
 }
-/*
-weui样式修改
-.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{ background:rgba(200,200,200,0.9);opacity:1;margin: 0 3px;}
-.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet-active{ background:#fff;}
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {bottom: 5px;}
-
-.swiper-pagination-fraction {width: 35px; height: 35px; line-height: 35px; left: 88%; border-radius: 50%; -webkit-border-radius: 50%; background-color: rgba(0,0,0,0.3); color: #fff; font-size: 13px; }
-
-.weui-row .weui-col-50{ width: calc((100% - 10px*1)/ 2); }
-.weui-row .weui-col-33{ width: calc((100% - 10px*2)/ 3); }
-
-.weui_dialog_bd{color:#333;}
-.weui_dialog_ft a,.weui_btn_dialog.primary{ color: #ff4040; }
-
-.weui_search_bar{ background-color: #fff; }
-.weui_search_bar:after{ display: none; }
-.weui_search_bar .weui_search_text{ background-color: #f4f4f4; padding-top: 2px; }
-.weui_search_bar .weui_search_outer:after{ background-color: #ebebeb; }
-
-.weui_cells_checkbox .weui_icon_checked{ line-height: 23px;}
-.weui_cells_checkbox .weui_icon_checked:before{ display: inline-block; margin-right: 5px; vertical-align: top; }
-.weui_cells_checkbox .weui_check:checked+.weui_icon_checked:before{ color: #f1363f;}
-
-.weui_cells_radio .weui_icon_checked{ line-height: 23px;}
-.weui_cells_radio .weui_icon_checked:before{ content: '\EA01'; display: inline-block; font-size: 23px; color: #be0807; margin-right: 5px; vertical-align: top;}
-.weui_cells_radio .weui_check:checked+.weui_icon_checked:before{ content: '\EA06'; display: inline-block; color: #be0807; font-size: 23px;}
-
-.weui_switch{ width: 42px; height: 25px; }
-.weui_switch:after, .weui_switch:before{ height: 23px; }
-.weui_switch:before{ width: 40px; }
-.weui_switch:after{ width: 25px; }
-.weui_switch:checked{ border-color: #f1363f; background-color: #f1363f; }
- */
-/*底部菜单*/
-/*.footer{ height: 50px; }
-.footer a{ line-height: 20px; color: #717171; }
-.footer i{ display: block; width: 25px; height: 25px; margin: 3px auto; background-image: url(../images/footer_ico.png); background-size: auto 50px; background-repeat: no-repeat; }
-.footer .fi-1{ background-position: 0 0; }
-.footer .fi-2{ background-position: -25px 0; }
-.footer .fi-3{ background-position: -50px 0; }
-.footer .fi-4{ background-position: -75px 0; }
-.footer .fi-5{ background-position: -100px 0; }
-.footer a.active{ color: #f53d44; }
-.footer a.active i{ background-position-y: -25px; }*/
-
 
 /*头部菜单*/
 .header{ width: 100%; height: 40px; line-height: 40px; }
@@ -224,26 +179,3 @@ weui样式修改
 
 .top-fixed ~ .main{padding-top: 42px;}
 /*.bottom-fixed ~ .main{padding-bottom:55px;}*/
-
-/*flex*/
-/*.box{ display: -webkit-flex; display: -webkit-box; display: box; display: -moz-box; display: flex; }
-.box-center{ display: -webkit-flex; display: -webkit-box; display: box; display: -moz-box; display: flex;align-items:center;-webkit-align-items:center; }
-.flex-1{ -webkit-flex: 1; -moz-flex: 1; flex: 1; -webkit-box-flex: 1; }
-.flex-0{flex:0 0 auto; -webkit-flex:0 0 auto; -webkit-box-flex: 0; }*/
-/*顶部对齐*/
-/*.f-top{align-self: flex-start; -webkit-align-self: flex-start; }*/
-/*底部对齐*/
-/*.f-bottom{align-self: flex-end; -webkit-align-self: flex-end; }
-.f-between{
-	justify-content: space-between;
-	-webkit-justify-content: space-between;
-}
-.f-around{
-	justify-content: space-around;
-	-webkit-justify-content: space-around;
-}
-*/
-
-/*img.imgm{display:block;max-width:100%;height:auto;margin-left:auto;margin-right:auto;}*/
-
-/*.box-b{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}*/

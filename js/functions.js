@@ -17,27 +17,23 @@ $(function(){
 
 });
 
-	function words_deal(){
-		console.log($("#textArea"));
-		// 字数限制
-		var curLength = $("#textArea").val().length;
-		if(curLength>100){
-			var num=$("#textArea").val().substr(0,100);
-			$("#textArea").val(num);
-			alert("超过字数限制，多出的字将被截断！" );
+	function limitWordsInput(args) {
+	var ele1 = args.ele1;
+	var ele2 = args.ele2;
+	var limits = args.limits;
+	var fn = args.fn;
+	ele1.on("input propertychange", function(){
+		var currentVal = ele1.val();
+		if( currentVal.length > limits){
+			var targetVal = currentVal.substr(0 , limits);
+			ele1.val(targetVal);
+			fn();
+		} else {
+			ele2.text( 0 + currentVal.length)
 		}
-		else{
-			$(".textNum em").text(0+$("#textArea").val().length);
-		}
-	};
-
-function imgHeight(){
-	// 图片限定高度
-	$(".item-pic").each(function(){
-		var w = $(this).width();
-		$(this).css({"height": w});
-	});
+	})
 }
+
 
 function checkTel(tel){
     if(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/.test(tel)){
@@ -63,4 +59,15 @@ function getnums()
             }
         }
     });
+}
+
+function bar() {
+    var time = setInterval(function() {
+        $(".bar_inside").each(function() {
+            // var rate = $(this).parent().next().find("em").html();
+            var rate = parseFloat($(this).attr("data-rate"));
+            // console.log(rate);
+            $(this).css("width", rate + "%");
+        });
+    }, 1000)
 }

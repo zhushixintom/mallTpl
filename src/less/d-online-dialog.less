@@ -1,0 +1,94 @@
+/* online consulting */
+
+.dialog-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 60px;
+  -webkit-overflow-scrolling: touch;
+  .dialog-timestamp{
+    margin: 8px 0;
+    text-align: center;
+    color: #999;
+  }
+}
+
+.dialog_box{
+  dt{
+    width: 60px;
+  }
+  .item-text{
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    line-height: 1.4em;
+    &:before{
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      position: absolute;
+      top: 10px;
+    }
+  }
+  .item-rt{
+    padding-left: 20px;
+    text-align: left;
+    .item-text{
+      background-color: #6b594d;
+      &:before{
+        border-right: 8px solid #6b594d;
+        left: -8px;
+      }
+    }
+  }
+  .item-lt {
+    padding-right: 20px;
+    text-align: right;
+    .item-text{
+      background-color: #fff;
+      &:before{
+        border-left: 8px solid #fff;
+        right: -8px;
+      }
+    }
+  }
+}
+
+
+.dialog_input {
+  bottom: 0px;
+  .table {
+    padding: 8px 10px;
+  }
+  i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    background-image: url(../images/icon_dialog2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    &.di-1{
+      background-position: 0 0;
+    }
+    &.di-2{
+      background-position: 0 -35px;
+    }
+  }
+  input {
+    padding: 10px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #c9c9c9;
+  }
+  .item-sub {
+    background-color: #6b594d;
+    width: 70px;
+  }
+}

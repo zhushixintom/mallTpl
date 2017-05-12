@@ -72,6 +72,76 @@
           </div>
         </li>
       </ul>
+
+      <!-- comment start -->
+      <ul class="mt10 bgf fs13 col0 last">
+        <li class="plr10 flex-box flex-between bb arrowR">
+          <div class="flex-box flex-col-baseline">
+            <p class="col3 fs14 mr10">评价</p>
+            <p class="red fs14">好评 <span class="fs16">96.6%</span></p>
+          </div>
+          <a href="" class="ptb10 col9 mr5">
+            更多评价
+          </a>
+        </li>
+        <li class="bb plr15 ptb10">
+          <div class="flex-box flex-col-center flex-between">
+            <div class="flex-box">
+              <p class="fs14 mr10">Miyako 美妍</p>
+              <div class="star_show" data-score="4"></div>
+            </div>
+            <span class="fs12 col9">2015.12.22</span>
+          </div>
+          <p class="mt5 fs13">
+            不上月便路備小地內行年見她。不次後流巴讀正節春度 人國人以運走不外，保軍我人小花公出三房海稱。
+          </p>
+        </li>
+        <li class="bb plr15 ptb10">
+          <div class="flex-box flex-col-center flex-between">
+            <div class="flex-box">
+              <p class="fs14 mr10">Miyako 美妍</p>
+              <div class="star_show" data-score="4"></div>
+            </div>
+            <span class="fs12 col9">2015.12.22</span>
+          </div>
+          <p class="mt5 fs13">
+            不上月便路備小地內行年見她。不次後流巴讀正節春度 人國人以運走不外，保軍我人小花公出三房海稱。
+          </p>
+          <div class="pt5 clearfix">
+            <div class="fl w60 ba mr5 mt5">
+              <p class="item-pic">
+                <img src="images/comment-img1.jpg" alt="" class="imgm">
+              </p>
+            </div>
+            <div class="fl w60 ba mr5 mt5">
+              <p class="item-pic">
+                <img src="images/comment-img2.jpg" alt="" class="imgm">
+              </p>
+            </div>
+            <div class="fl w60 ba mr5 mt5">
+              <p class="item-pic">
+                <img src="images/comment-img3.jpg" alt="" class="imgm">
+              </p>
+            </div>
+            <div class="fl w60 ba mr5 mt5">
+              <p class="item-pic">
+                <img src="images/comment-img1.jpg" alt="" class="imgm">
+              </p>
+            </div>
+            <div class="fl w60 ba mr5 mt5">
+              <p class="item-pic">
+                <img src="images/comment-img1.jpg" alt="" class="imgm">
+              </p>
+            </div>
+            <div class="fl w60 ba mr5 mt5">
+              <p class="item-pic">
+                <img src="images/comment-img1.jpg" alt="" class="imgm">
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- comment end -->
       <div class="mt10 bgf p10 col9 fs14 bb">
         商品描述
       </div>
@@ -88,13 +158,21 @@
     <div class="popup-overlay"></div>
     <div class="popup-content bgf" >
       <form action="">
-      <a href="" class="p10 bgf flex-box">
+      <!-- 图片高出白色底框的样式 -->
+      <div class="p10 flex-box flex-between relative sepc-hd">
+        <div class="img-wrap ba m-col-20">
+          <p class="item-pic"><img src="images/index-re1.jpg" alt="" class="block"></p>
+        </div>
+        <span>价格</span>
+        <p class="red1 fs18"><span class="fs13">¥</span>2499</p>
+      </div>
+      <!-- <a href="" class="p10 bgf flex-box">
         <div class="m-col-25 flex-grow-0">
           <div class="item-pic">
-            <img src="images/index-tg1.jpg" alt="">
+            <img src="images/list-img.jpg" alt="">
           </div>
         </div>
-        <div class="pl10 flex-self-stretch flex-box flex-col flex-between flex-col-stretch flex-grow-1">
+        <div class="pl10 flex-self-stretch flex-box flex-col flex-between flex-col-stretch flex-grow-1 hidden">
           <p class="multi-line fs15 col0">
             普吉岛7天往返含税机票(赠送5天wifi)
           </p>
@@ -106,7 +184,7 @@
             <span class="fs16 col0 flex-self-end"><em class="fs14">¥</em>7399</span>
           </div>
         </div>
-      </a>
+      </a> -->
       <ul class="mt10 p10 bgf fs13 spec">
         <li class="table mt5">
           <div class="table-cell col9 w70">产品类型</div>
@@ -165,7 +243,7 @@
     </script>
     <!-- 购买规格 -->
     <script>
-    $(".gbuy-3,.gbuy-4").on("click", function() {
+    $(".show-pop,.show-pop").on("click", function() {
       $(".sepc-wrap").show();
     });
     $(".sepc-wrap .Icon-close1,.sepc-wrap .popup-overlay").on("click", function() {

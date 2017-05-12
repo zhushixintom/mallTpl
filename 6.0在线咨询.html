@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<title>6.0在线咨询</title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<section class="wrap">
+
+	<section class="main dialog-main">
+
+		<div class="plr10 dialog_box">
+				<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>
+				<dl class="table mt10">
+					<dt class="table-cell vt">
+						<div class="item-pic">
+							<img src="images/default-avatar.jpg" alt="" class="imgm">
+						</div>
+					</dt>
+					<dd class="table-cell vt item-rt">
+						<div class="fs12 col9 mb5">罗美玲</div>
+						<div class="p10 fs13 colf item-text">您好，请问您有什么问题要咨询？</div>
+					</dd>
+				</dl>
+
+				<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>
+				<dl class="table mt10">
+					<dd class="table-cell vt item-lt">
+						<div class="fs12 col9 mb5">销售员</div>
+						<div class="p10 fs13 col3 item-text">你好，咨询红酒方面问题。</div>
+					</dd>
+					<dt class="table-cell vt">
+						<div class="item-pic"><img src="images/default-upload-img.png" alt="" class="imgm"></div>
+					</dt>
+				</dl>
+
+				<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>
+				<dl class="table mt10">
+					<dt class="table-cell vt">
+						<div class="item-pic"><img src="images/default-avatar.jpg" alt="" class="imgm"></div>
+					</dt>
+					<dd class="table-cell vt item-rt">
+						<div class="fs12 col9 mb5">罗美玲</div>
+						<div class="p10 fs13 colf item-text">您好，请问您有什么问题要咨询？</div>
+					</dd>
+				</dl>
+
+				<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>
+				<dl class="table mt10">
+					<dd class="table-cell vt item-lt">
+						<div class="fs12 col9 mb5">销售员</div>
+						<div class="p10 fs13 col3 item-text">你好，咨询红酒方面问题。</div>
+					</dd>
+					<dt class="table-cell vt">
+						<div class="item-pic"><img src="images/default-upload-img.png" alt="" class="imgm"></div>
+					</dt>
+				</dl>
+
+				<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>
+				<dl class="table mt10">
+					<dt class="table-cell vt">
+						<div class="item-pic"><img src="images/default-avatar.jpg" alt="" class="imgm"></div>
+					</dt>
+					<dd class="table-cell vt item-rt">
+						<div class="fs12 col9 mb5">罗美玲</div>
+						<div class="p10 fs13 colf item-text">您好，请问您有什么问题要咨询？</div>
+					</dd>
+				</dl>
+
+				<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>
+				<dl class="table mt10">
+					<dd class="table-cell vt item-lt">
+						<div class="fs12 col9 mb5">销售员</div>
+						<div class="p10 fs13 col3 item-text">你好，咨询红酒方面问题。</div>
+					</dd>
+					<dt class="table-cell vt">
+						<div class="item-pic"><img src="images/default-upload-img.png" alt="" class="imgm"></div>
+					</dt>
+				</dl>
+		</div>
+
+	</section>
+
+	<div class="bottom-fixed dialog_input">
+		<div class="table box-b bgf">
+			<div href="javascript:;" class="table-cell vm pr10" id="dialog_input">
+				<!-- <p class="box-b ba br5">认养</p> -->
+				<input type="text" class="form_inp bgf p10 box-b ba br5" placeholder="请输入..." />
+			</div>
+			<a href="javascript:;" class="table-cell vm tc br5 item-sub">
+				<span class="fs14 colf">发送</span>
+			</a>
+		</div>
+	</div>
+	<!-- main主体 end -->
+
+</section>
+<!-- 主体 end -->
+
+
+<script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<script src="js/ios_prevent_pull_up.js"></script>
+<script>
+$(function(){
+	$(document).on('click','.item-sub',function() {
+		var say = $(this).prev().find("input").val();
+		console.log(say);
+		$(this).prev().find("input").focus().val("");
+		$(".dialog_box").append(
+			// '<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>' +
+			// 	'<dl class="table mt10">' +
+			// 	'	<dt class="table-cell vt">' +
+			// 	'		<div class="item-pic"><img src="images/default-avatar.jpg" alt="" class="imgm"></div>' +
+			// 	'	</dt>' +
+			// 	'	<dd class="table-cell vt item-rt">' +
+			// 	'		<div class="fs12 col9 mb5">罗美玲</div>' +
+			// 	'		<div class="p10 fs13 colf item-text">您好，请问您有什么问题要咨询1？</div>' +
+			// 	'	</dd>' +
+			// 	'</dl>' +
+				'<div class="fs12 dialog-timestamp">2016-12-26 10:30:23</div>' +
+				'<dl class="table mt10">' +
+				'	<dd class="table-cell vt item-lt">' +
+				'		<div class="fs12 col9 mb5">销售员</div>' +
+				'		<div class="p10 fs13 col3 item-text">' +
+				say +
+				'</div>' +
+				'	</dd>' +
+				'	<dt class="table-cell vt">' +
+				'		<div class="item-pic"><img src="images/default-upload-img.png" alt="" class="imgm"></div>' +
+				'	</dt>' +
+				'</dl>'
+			);
+		var h =  $(".dialog_box").outerHeight();
+		console.log(h);
+		$(".dialog-main").animate({"scrollTop":h}, 400);
+		$(".dialog-main").scrollTop(h);
+	});
+});
+</script>
+</body>
+</html>

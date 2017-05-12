@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+	<title>5.5.6评价建议</title>
+	<% include _head.html %>
+	</head>
+<body>
+
+	<section class="wrap">
+
+
+		<section class="main">
+
+		<form action="">
+
+			<section class="flex-box flex-col flex-col-stretch flex-between" style="min-height:100vh;">
+
+				<div>
+					<div class="bgf pl10">
+						<div class="flex-box ptb10 pr10 bb">
+							<div class="flex-grow-0 m-col-20">
+								<p class="item-pic">
+									<img src="images/list-img1.jpg" alt="">
+								</p>
+							</div>
+							<div class="flex-grow-1 pl15">
+								<p class="fs15 col6">您的评分：</p>
+								<p class="mt10 star_select"></p>
+							</div>
+						</div>
+					</div>
+					<div class="p10 bgf col3 fs13">
+						<textarea name="" class="form_text" id="advice" cols="30" rows="8" placeholder="写下您在本平台学习的体验&#xA可以为其他小伙伴提供参考哦～" style="padding: 2px"></textarea>
+						<p class="tr col9"><span class="currentVal">0</span><em>/</em><span>500</span></p>
+						<!--  -->
+					</div>
+
+					<ul class="bt clearfix multi-upload fs13 bgf p10">
+						<li class="mt10 mr10 ba upload-img" style="background-image:url(./images/default-upload-img.png);"><a href="javascript:;" class="br50 upload-close"></a></li>
+						<li class="mt10 mr10 ba upload-img" style="background-image:url(./images/default-upload-img.png);"><a href="javascript:;" class="br50 upload-close"></a></li>
+						<li class="mt10 mr10 ba upload-img" style="background-image:url(./images/default-upload-img.png);"><a href="javascript:;" class="br50 upload-close"></a></li>
+						<li class="mt10 ba upload-file"></li>
+					</ul>
+
+					<div class="mt10 p10 bgf fs13 col0">
+						<input type="text" name="" id="" class="form_inp" placeholder="请输入您的手机号/邮箱等（选填）">
+					</div>
+				</div>
+				<!--  -->
+				<div class="mt15">
+					<a href="" class="btn btn-primary">提交</a>
+				</div>
+
+			</section>
+		</section>
+	</section>
+
+
+<!-- city-pick -->
+
+<% include _foot.html %>
+
+  <script>
+  // $("#advice").on("input propertychange", function(){
+   var a = new limitWordsInput({
+        ele1: $("#advice"),
+        ele2: $(".currentVal"),
+        limits: 500,
+        fn: function(){
+          // $.toast("字数不能超出100");
+         alert("字数不能超出20");
+        }
+      });
+  // });
+  </script>
+</body>
+</html>

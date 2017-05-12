@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<title>3.1列表带进度条</title>
+	<% include _head.html %>
+	</head>
+
+<body>
+<section class="wrap">
+
+	<% include _foot-fixed-common.html %>
+
+	<section class="main">
+
+		<ul class="learning-list">
+			<li class="bgf">
+				<p class="col9 fs12 p10">有效期至2017-08-28</p>
+				<a href="" class="bgf plr10 flex-box">
+					<div class="flex-grow-0 m-col-33">
+						<div class="item-pic">
+							<img src="images/list-img1.jpg" alt="">
+						</div>
+						<!-- 宽比3:2 -->
+					</div>
+					<div class="pl10 flex-grow-1 hidden">
+						<p class="single-line fs13 col0">
+							学习课程气飞很劳府细中美改格
+						</p>
+						<p class="fs12 col9"><i class="Icon-teacher"></i>王老师</p>
+						<p class="fs10 col9" style="margin-top:3px">学习进度</p>
+						<div class="bar">
+							<div class="bar_inside" data-rate="80"></div>
+						</div>
+					</div>
+				</a>
+				<div class="mt10 flex-box flex-between plr10 ptb5 item-btn">
+					<div class="single-line fs12 col6 pr10">
+						共 1 节课，还未开始学习节课，还未开始学习节课，还未开始学习节课，还未开始学习
+					</div>
+					<a href="" class="btn-mini flex-grow-0 fs10">立即学习</a>
+				</div>
+			</li>
+			<li class="bgf">
+				<p class="col9 fs12 p10">有效期至2017-08-28</p>
+				<a href="" class="bgf plr10 flex-box">
+					<div class="flex-grow-0 m-col-33">
+						<div class="item-pic">
+							<img src="images/list-img1.jpg" alt="">
+						</div>
+						<!-- 宽比3:2 -->
+					</div>
+					<div class="pl10 flex-grow-1 hidden">
+						<p class="single-line fs13 col0">
+							学习课程气飞很劳府细中美改格
+						</p>
+						<p class="fs12 col9"><i class="Icon-teacher"></i>王老师</p>
+						<p class="fs10 col9" style="margin-top:3px">学习进度</p>
+						<div class="bar">
+							<div class="bar_inside" data-rate="80"></div>
+						</div>
+					</div>
+				</a>
+				<div class="mt10 flex-box flex-between plr10 ptb5 item-btn">
+					<div class="single-line fs12 col6 pr10">
+						共 1 节课，还未开始学习节课，还未开始学习节课，还未开始学习节课，还未开始学习
+					</div>
+					<a href="" class="btn-mini flex-grow-0 fs10">立即学习</a>
+				</div>
+			</li>
+			<li class="bgf">
+				<p class="col9 fs12 p10">有效期至2017-08-28</p>
+				<a href="" class="bgf plr10 flex-box">
+					<div class="flex-grow-0 m-col-33">
+						<div class="item-pic">
+							<img src="images/list-img1.jpg" alt="">
+						</div>
+						<!-- 宽比3:2 -->
+					</div>
+					<div class="pl10 flex-grow-1 hidden">
+						<p class="single-line fs13 col0">
+							学习课程气飞很劳府细中美改格
+						</p>
+						<p class="fs12 col9"><i class="Icon-teacher"></i>王老师</p>
+						<p class="fs10 col9" style="margin-top:3px">学习进度</p>
+						<div class="bar">
+							<div class="bar_inside" data-rate="80"></div>
+						</div>
+					</div>
+				</a>
+				<div class="mt10 flex-box flex-between plr10 ptb5 item-btn">
+					<div class="single-line fs12 col6 pr10">
+						共 1 节课，还未开始学习节课，还未开始学习节课，还未开始学习节课，还未开始学习
+					</div>
+					<a href="" class="btn-mini flex-grow-0 fs10">立即学习</a>
+				</div>
+			</li>
+		</ul>
+
+
+	</section>
+</section>
+
+<section class="popup-wrap code-pop hide">
+	<section class="popup-overlay"></section>
+	<section class="popup-content bgf br5 fs13 p15">
+		<div class="flex-box">
+			<div class="m-col-20">
+				<p class="item-pic">
+					<img src="images/default-avatar.jpg" alt="">
+				</p>
+			</div>
+			<div class="pl10">
+				<p class="col3 fs14">用户名A</p>
+				<p class="mt15 col9 fs12">我就是我</p>
+			</div>
+		</div>
+		<div class="" style="padding: 20px 0">
+			<img src="images/default-code.jpg" alt="" class="block ma m-col-66">
+		</div>
+		<div class="mt5 tc fs12 col6">扫一扫上面的二维码图案，加我微信</div>
+	</section>
+</section>
+<% include _fixed-rignt-icon.html %>
+
+<% include _foot.html %>
+
+<script>
+	$(".fixed-icon").click(function(){
+		$(".code-pop").show();
+	});
+	$(".code-pop").click(function(){
+		$(".code-pop").hide();
+	});
+	$(function(){
+		bar();
+	})
+</script>
+</body>
+</html>

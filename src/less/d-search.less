@@ -30,7 +30,8 @@
 	li{
 		float: left;
 		margin-right: 10px;
-		margin-bottom: 10px;
+    margin-top: 8px;
+		margin-bottom: 8px;
 		width: ~"calc((100% - 20px) / 3)";
 		width: ~"-webkit-calc((100% - 20px) / 3)";
 		a{
@@ -41,6 +42,9 @@
 			color: #7d7d7d;
 			border-radius: 3px;
 		}
+    &:ntm-of-type(3n){
+      margin-right: 0;
+    }
 	}
 }
 
