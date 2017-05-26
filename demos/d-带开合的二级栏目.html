@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<title>d-二级栏目</title>
+  <% include _head.html %>
+</head>
+<body>
+<section class="wrap">
+
+	<section class="main ">
+
+		<ul class="question last fs14">
+			<li class="bb bgf">
+				<div class="box p10 arrow-icon active">
+					<i class="ico-arrowL"></i>
+					<p class="left-line">问题描述3问题描述1？</p>
+				</div>
+				<div class="p10 bg-f1 fs13 col6">
+					“意外”需同事满足外开的、突发的、非本意的和非 疾病的四个要素。符合此要求造成的身体伤残才可以 在本计划中获得互助哦。
+				</div>
+			</li>
+			<li class="bb bgf">
+				<div class="box p10 arrow-icon">
+					<i class="ico-arrowL"></i>
+					<p class="left-line">问题描述2问题描述1？</p>
+				</div>
+				<div class="p10 bg-f1 fs13 col6" style="display: none">
+					“意外”需同事满足外开的、突发的、非本意的和非 疾病的四个要素。符合此要求造成的身体伤残才可以 在本计划中获得互助哦。
+				</div>
+			</li>
+			<li class="bb bgf">
+				<div class="box p10 arrow-icon">
+					<i class="ico-arrowL"></i>
+					<p class="left-line">问题描述3问题描述1？</p>
+				</div>
+				<div class="p10 bg-f1 fs13 col6" style="display: none">
+					“意外”需同事满足外开的、突发的、非本意的和非 疾病的四个要素。符合此要求造成的身体伤残才可以 在本计划中获得互助哦。
+				</div>
+			</li>
+		</ul>
+
+
+		<!-- 图片懒加载 -->
+		<script src="js/jquery.lazyload.min.js"></script>
+
+
+	</section>
+
+</section>
+
+<% include _foot.html %>
+<!-- <script>
+	$(function () {
+		$(".rule li .box,.question li .box").on("click",function () {
+			var _this = $(this);
+			_this.toggleClass("arrow-icon1");
+			if(_this.hasClass("arrow-icon1")){
+				_this.parent().next().slideDown();
+				_this.parent().parent().siblings().find(".arrow-icon").parent().next().slideUp();
+				_this.parent().parent().siblings().find(".arrow-icon1").toggleClass("arrow-icon1");
+			}else{
+				_this.parent().next().slideUp();
+			}
+		})
+	})
+</script> -->
+
+<script>
+//tab栏目的滚动
+	var tab_slide = function(first_nav,class_name) {
+		first_nav.each(function(){$(this).on("click",function(){
+			if($(this).hasClass(class_name)){
+				$(this).removeClass(class_name).next().slideUp();
+			}else{
+				$(this).addClass(class_name);
+				$(this).next().slideDown();
+				$(this).parent().siblings().find(">." + class_name).removeClass(class_name).next().slideUp();
+			}
+		})})
+	};
+	$(function(){
+		tab_slide($(".arrow-icon"),"active");
+	});
+	</script>
+</body>
+</html>

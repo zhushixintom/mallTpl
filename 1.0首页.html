@@ -2,15 +2,51 @@
 <html>
 <head>
 	<title>1.1首页</title>
-<% include _head.html %>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
 </head>
 <body>
 
 <section class="wrap">
 
-<% include _foot-fixed-common.html %>
+<div class="bottom-fixed">
+	<footer class="table bt-f1 bgf tc fs10 footer">
+		<a href="#" class="table-cell vm"><i class="fi-0 ma"></i>首页</a>
+		<a href="#" class="table-cell vm on"><i class="fi-1 ma"></i>分类</a>
+		<a href="#" class="table-cell vm"><i class="fi-2 ma"><!-- <em>2</em> --></i>福利池</a>
+		<a href="#" class="table-cell vm"><i class="fi-3 ma"></i>购物车</a>
+		<a href="#" class="table-cell vm"><i class="fi-4 ma"></i>我的</a>
+	</footer>
+</div>
+<!-- 底部悬浮 end -->
+
 
 	<section class="main">
+
+	  <section class="top-fixed">
+	    <div class="flex-box flex-between fs13 top-search" style="background-color: transparent;">
+	      <div class="search-btn-wrap flex-grow-1 pointer relative">
+	        <i class="ico-search"></i>
+	        <input type="text" class="" placeholder="搜索您需要的产品">
+	        <div class="mask1"></div>
+	      </div>
+    		<div class="mask"></div>
+	    </div>
+	  </section>
 
 		<!-- Swiper -->
     <div class="swiper-container index-ban">
@@ -283,9 +319,54 @@
 
 </section>
 
-<% include _to-top.html %>
+<a href="javascript:;" class="to-top">
+	<i class="ico-top">
+	</i>
+</a>
+<!-- to -top -->
 
-<% include _foot.html %>
+<script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+
+<!-- search 变色-->
+<script>
+	$(function(){
+		var $mask = $(".top-search .mask");
+		var $mask1 = $(".search-btn-wrap .mask1");
+		var $input = $(".search-btn-wrap");
+		var windowWidth = $(window).width();
+		const h = windowWidth * 400 / 750 - 50;
+		var windowSrollTop = $(window).scrollTop();
+		if(windowSrollTop >= 400){
+			$mask.css({"opacity": 1});
+			$(".top-search").addClass("css1");
+		}
+		$(window).scroll(function(){
+			windowSrollTop = $(window).scrollTop();
+			var ratio = windowSrollTop / h;
+			if(ratio <= 2) {
+				$mask.css({"opacity": ratio});
+				if( ratio >= 0.4){
+					$mask1.css({"opacity": ratio});
+					$(".top-search").addClass("css1");
+				} else {
+					$(".top-search").removeClass("css1");
+				}
+			}
+			console.log(h);
+			console.log(windowSrollTop);
+		});
+	})
+</script>
 <!-- Initialize Swiper -->
 <script>
 var swiper = new Swiper('.index-ban', {

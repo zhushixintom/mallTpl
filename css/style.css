@@ -72,9 +72,6 @@ body,
 .p8 {
   padding: 8px;
 }
-.h50 {
-  height: 50px;
-}
 .bt-f1 {
   border-top: 1px solid #f1f1f1;
 }
@@ -94,9 +91,6 @@ body,
 .last a:last-child,
 .last li:last-child {
   border-bottom: none;
-}
-.w50p {
-  width: 50%;
 }
 /* ================================================= */
 /*底部菜单*/
@@ -448,6 +442,17 @@ body,
 .nothing span {
   display: block;
 }
+.nomore span i {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  background-image: url(../images/default-nomore.png);
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 /* a-link */
 a.link {
   background-position-x: calc(100% - 10px);
@@ -461,7 +466,7 @@ a.link:active {
 .to-top {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   position: fixed;
-  bottom: 20%;
+  bottom: 60px;
   right: 10px;
   display: inline-block;
   width: 41px;
@@ -592,10 +597,41 @@ a.link:active {
 .top-search {
   padding: 8px;
 }
+.top-search .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f8f8f8;
+  opacity: 0;
+}
+.top-search.css1 ::-webkit-input-placeholder,
+.top-search.css1 ::-webkit-input-placeholder {
+  color: #999;
+}
+.top-search.css1 ::placeholder,
+.top-search.css1 ::-webkit-input-placeholder {
+  color: #999;
+}
 .search-btn-wrap {
-  background-color: #f8f8fb;
+  overflow: hidden;
+  /* background-color: #f8f8fb; */
+  background-color: rgba(248, 248, 251, 0.5);
   border-radius: 24px;
   padding: 0 10px 0 15px;
+}
+.search-btn-wrap .mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  opacity: 0.4;
 }
 .search-btn-wrap input {
   padding: 8px 10px;
@@ -605,11 +641,11 @@ a.link:active {
 }
 .search-btn-wrap input::-webkit-input-placeholder,
 .search-btn-wrap input::-webkit-input-placeholder {
-  color: #cbcbcb;
+  color: #c7c7c7;
 }
 .search-btn-wrap input::placeholder,
 .search-btn-wrap input::-webkit-input-placeholder {
-  color: #cbcbcb;
+  color: #c7c7c7;
 }
 .search-wrap {
   min-height: 100vh;
@@ -633,7 +669,7 @@ a.link:active {
   color: #7d7d7d;
   border-radius: 3px;
 }
-.search-list li:ntm-of-type(3n) {
+.search-list li:nth-of-type(3n) {
   margin-right: 0;
 }
 [class*="ico-search"] {
@@ -1257,7 +1293,7 @@ i.form-ico.form-ico17 {
   position: relative;
 }
 .address-default .address-tag {
-  background-color: #f04848;
+  background-color: #ff8a00;
   line-height: 1.8em;
   padding: 0px 4px;
   display: inline-block;
@@ -1604,12 +1640,8 @@ i[class*="ico-addr-"] {
 }
 /* ================================================= */
 /* 2.2分类-横向滚动 */
-.know-nav {
-  overflow: auto;
-  white-space: nowrap;
-}
 .know-nav a {
-  margin-right: 18px;
+  width: auto;
   color: #626262;
   position: relative;
   display: block;
@@ -1617,9 +1649,6 @@ i[class*="ico-addr-"] {
 }
 .know-nav a.on {
   color: #ff6633;
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
 }
 .know-nav a.on:after {
   position: absolute;
