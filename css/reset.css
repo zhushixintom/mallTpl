@@ -134,9 +134,11 @@ label{user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-s
 
 /*提示*/
 .hint-num{ position: relative;}
-.hint-num em{ display: block; min-height: 6px; padding: 0 3px; background: #e1454b; font-style: normal; text-align: center; font-size: 12px; line-height: 13px; color: #fff; border-radius: 20px; -webkit-border-radius: 20px; position: absolute; top: 0; right: -8px; }
+.hint-num em{font-family: "Microsoft YaHei"; display: block; background: #e1454b; font-style: normal; text-align: center; font-size: 12px; width: 13px;height: 13px;line-height: 13px; color: #fff; border-radius: 50%; -webkit-border-radius: 50%; position: absolute; top: 0; right: -8px; }
 
 .hint-txt:after{ content: ""; display: inline-block; width: 6px; height: 6px; background-color: #e1454b; border-radius: 50%; -webkit-border-radius: 50%; vertical-align: top; margin-left: 5px; }
+i.hint-txt{position: relative;}
+i.hint-txt:after{position: absolute;margin-left: 0;top:-2px;right:-3px;display: block;}
 
 /*倒三角*/
 .arrow-icon{ position: relative;padding-right: 20px;}
