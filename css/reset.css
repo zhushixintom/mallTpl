@@ -181,3 +181,10 @@ button.xilu_btn:focus,input.xilu_btn:focus{ outline: 0; }
 
 .top-fixed ~ .main{padding-top: 42px;}
 /*.bottom-fixed ~ .main{padding-bottom:55px;}*/
+
+/* 针对6plus必须要有-webki-前缀的问题 */
+.weui-row{
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
