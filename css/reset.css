@@ -132,11 +132,13 @@ label{user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-s
 /* button,select,textarea,input:not([type="radio"]):not([type="checkbox"]){border:0;resize: none} */
 .form_inp,.form_sel,.form_text{border: 0px;width: 100%;resize:none;	}
 
-/*提示*/
+/*红点提示 用于内部有数字*/
 .hint-num{ position: relative;}
 .hint-num em{font-family: "Microsoft YaHei"; display: block; background: #e1454b; font-style: normal; text-align: center; font-size: 12px; width: 13px;height: 13px;line-height: 13px; color: #fff; border-radius: 50%; -webkit-border-radius: 50%; position: absolute; top: 0; right: -8px; }
 
+/*红点提示 用于文字*/
 .hint-txt:after{ content: ""; display: inline-block; width: 6px; height: 6px; background-color: #e1454b; border-radius: 50%; -webkit-border-radius: 50%; vertical-align: top; margin-left: 5px; }
+/*红点提示 用于i标签的图标红点*/
 i.hint-txt{position: relative;}
 i.hint-txt:after{position: absolute;margin-left: 0;top:-2px;right:-3px;display: block;}
 
@@ -188,3 +190,6 @@ button.xilu_btn:focus,input.xilu_btn:focus{ outline: 0; }
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
+/*针对chrome输入框存在记录后背景为黄色的问题*/
+/* input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;} */

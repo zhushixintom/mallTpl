@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>2.3产品详情</title>
+  <title>3.0产品详情</title>
   	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 	<meta content="yes" name="apple-mobile-web-app-capable" />
@@ -30,9 +30,9 @@
 	<footer class="table bt-f1 bgf tc fs10 footer">
 		<a href="#" class="table-cell vm m-col-14 br"><i class="ico-foot0 block ma"></i>首页</a>
 		<a href="#" class="table-cell vm m-col-14 br"><i class="ico-foot1 block ma hint-num"><em>2</em></i>购物车</a>
-		<a href="#" class="table-cell vm bg-orange fs15 colf show-pop">
+		<a href="#" class="table-cell vm bg-orange fs15 colf open-popup" data-target="#spec-pop">
 		<i class="ico-foot2"></i>加入购物车</a>
-		<a href="javascript:;" class="table-cell vm bg-red fs15 colf show-pop">
+		<a href="javascript:;" class="table-cell vm bg-red fs15 colf open-popup" data-target="#spec-pop">
 		<i class="ico-foot3"></i>立即购买</a>
 	</footer>
 </div>
@@ -181,12 +181,12 @@
     </section>
   </section>
   <!-- addr-wrap -->
-  <section class="popup-wrap sepc-wrap hide">
-    <div class="popup-overlay"></div>
-    <div class="popup-content bgf" >
+  <section id="spec-pop" class="spec-pop weui-popup-container popup-bottom">
+    <div class="weui-popup-overlay"></div>
+    <div class="weui-popup-modal bgf">
       <form action="">
       <!-- 图片高出白色底框的样式 -->
-      <div class="p10 flex-box flex-between relative sepc-hd">
+      <div class="p10 flex-box flex-between relative spec-hd">
         <div class="img-wrap ba m-col-20">
           <p class="item-pic"><img src="images/index-re1.jpg" alt="" class="block"></p>
         </div>
@@ -212,7 +212,7 @@
           </div>
         </div>
       </a> -->
-      <ul class="mt10 p10 bgf fs13 spec">
+      <ul class="p10 bgf fs13 spec-wrap">
         <li class="table mt5">
           <div class="table-cell col9 w70">产品类型</div>
           <div class="table-cell">
@@ -239,10 +239,10 @@
           </div>
         </li>
       </ul>
-        <div><a href="" class="btn btn-primary">关　闭</a></div>
+      <!--   <div><a href="" class="btn btn-primary">关　闭</a></div> -->
       </form>
     </div>
-  </section>
+    </section>
   <script src="weui/lib/jquery-2.1.4.js"></script>
 <!-- <script src="weui/js/jquery-weui.min.js"></script> -->
 <script src="weui/js/jquery-weui.js"></script>
@@ -279,12 +279,12 @@
     </script>
     <!-- 购买规格 -->
     <script>
-    $(".show-pop,.show-pop").on("click", function() {
-      $(".sepc-wrap").show();
-    });
-    $(".sepc-wrap .Icon-close1,.sepc-wrap .popup-overlay").on("click", function() {
-      $(".sepc-wrap").hide();
-    });
+    // $(".show-pop,.show-pop").on("click", function() {
+    //   $("#sepc-wrap").show();
+    // });
+    // $(".sepc-wrap .Icon-close1,.sepc-wrap .popup-overlay").on("click", function() {
+    //   $("#sepc-wrap").hide();
+    // });
     </script>
 </body>
 
