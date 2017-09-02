@@ -13,11 +13,11 @@ a shopping mall template for weChat platform, based on jquery weui
 9. 完善6.1在线咨询
 
 ## issue9.2
-1.新增头部样式，头部悬浮高度44px;2.底部悬浮高度50px
-2.去除多余文件foot.less，去除reset中的头部样式
-3.reset中增加disabled的input的文字颜色调整
-4.修改dialog中的图标icon错误
-5.整理了优惠劵相关样式
-6.last下边框的代码漏洞
-7.swiper-container的flex样式漏洞
+1.新增头部样式，头部悬浮高度44px;2.底部悬浮高度50px；
+2.去除多余文件foot.less，去除reset中的头部样式；
+3.reset中增加disabled的input的文字颜色调整；
+4.修改dialog中的图标icon错误；
+5.整理了优惠劵相关样式；
+6.last下边框的代码漏洞；
+7.swiper-container的flex样式漏洞；
 8.to-top的样式修改为display:none;
