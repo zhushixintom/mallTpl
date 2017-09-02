@@ -189,7 +189,17 @@ button.xilu_btn:focus,input.xilu_btn:focus{ outline: 0; }
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
+.swiper-wrapper{
+	display: flex;
+	display: -webkit-flex;
+}
+.swiper-container-vertical>.swiper-wrapper {
+  -webkit-flex-direction:column;
+  flex-direction: column;
+ }
 
 /*针对chrome输入框存在记录后背景为黄色的问题*/
 /* input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;} */
