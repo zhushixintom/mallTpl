@@ -22,7 +22,12 @@ del{text-decoration:line-through;}
 header,footer,article,section,menu,nav,aside,dialog,figure,figcaption,hgroup,details,summary{display:block;}
 button,select,textarea,input:not([type="radio"]):not([type="checkbox"]){-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 :focus{outline:0;}/* Form selected style modification */
-textarea{resize: none;line-height: 1.2em;}
+textarea{resize: none;}
+input:disabled{
+  /* -webkit-text-fill-color: rgba(255, 255, 255, 1); */
+  /* 自行改动设置disabled的文字的颜色 */
+  -webkit-opacity: 1;
+}
 
 /*限制img最大宽度*/
 img{max-width:100%;}
@@ -165,24 +170,10 @@ button.xilu_btn:focus,input.xilu_btn:focus{ outline: 0; }
 	.fs10{ font-size: 11px;}.fs11{ font-size: 12px;}.fs12{ font-size: 13px;}.fs13{ font-size: 14px;}.fs14{ font-size: 16px;}.fs15{ font-size: 17px;}.fs16{ font-size: 18px;}.fs18{ font-size: 20px;}.fs20{ font-size: 24px;}.fs24{ font-size: 28px;}.fs30{ font-size: 34px;}.fs40{ font-size: 46px;}
 }
 
-/*头部菜单*/
-.header{ width: 100%; height: 40px; line-height: 40px; }
-.header dt .logo{ display: block; height: 30px;}
-.header dt img{ display: block; width: auto; max-height: 100%; margin: 0 auto;}
-.header dd{ width: 40px;}
-.header dd a{ display: block; width: 22px; height: 22px; padding: 9px;}
-.header dd a:before{ content: ""; display: block; width: 22px; height: 22px; background-image: url(../images/icon_head.png); background-size: 100% auto; background-repeat: no-repeat;}
-.header dd .back:before{ background-position: 0 0;}
-.header dd .search:before{ background-position: 0 -22px;}
-.header dd .news:before{ background-position: 0 -44px;}
-
+/* 头部和底部悬浮 */
 .top-fixed{ width: 100%; max-width: 640px; position: fixed; left: 50%; top: 0; z-index: 99; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .bottom-fixed{ width: 100%; max-width: 640px; position: fixed; left: 50%; bottom: 0; z-index: 99; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .bottom-fixed1{ width: 100%; max-width: 640px; position: fixed; bottom: 0;left: 0;right: 0; z-index: 99;}
-/*.bottom-fixed.static{position: static;transform: translate(0,0);-webkit-transform: translate(0,0);}*/
-
-.top-fixed ~ .main{padding-top: 42px;}
-/*.bottom-fixed ~ .main{padding-bottom:55px;}*/
 
 /* 针对6plus必须要有-webki-前缀的问题 */
 .weui-row{

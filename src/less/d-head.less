@@ -1,0 +1,62 @@
+/*================= 头部菜单 =================*/
+.header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  color: #000;
+  position: relative;
+  a{
+    position: absolute;
+    font-size: 0.65rem;
+    .header_back{
+      height: 22px;
+      margin-right: 4px;
+    }
+    .header_options{
+      height: 22px;
+    }
+  }
+  .header_right,.header_left{
+    height: 44px;
+    top: 0;
+    // margin-top: -2px;
+  }
+  .header_left{
+    left: 0;
+    padding-left: 10px;
+  }
+  .header_right{
+    right: 0;
+    padding-right: 10px;
+    margin-top: -1px;
+  }
+  .header_middle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #f0f0f0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(1,0.5);
+    transform: scale(1,0.5);
+  }
+}
+.placeholder-header{
+  height: 44px;
+  width: 100%;
+}

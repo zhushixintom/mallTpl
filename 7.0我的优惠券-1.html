@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<title>1.4领取优惠券</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" href="weui/lib/weui.min.css">
+	<link rel="stylesheet" href="weui/css/jquery-weui.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/flex.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9 ]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<section class="wrap">
+
+	<section class="main">
+
+		<div class="detail_ban">
+			<img src="images/coupon-ban.jpg" alt="" class="block ma">
+		</div>
+
+		<ul class="p10">
+			<li class="mb10 relative">
+				<a href="" class="coupon_wrap flex-box flex-col-stretch bgf">
+					<div class="flex-box flex-col flex-between flex-grow-1">
+						<div class="flex-box plr10 pt10 w-100">
+							<div class="img-wrap flex-grow-0 ba br5 mr10 hidden">
+								<p class="item-pic">
+									<img src="images/coupon.png" alt="" class="imgm">
+								</p>
+							</div>
+							<div class="pb10">
+								<p class="col-primary fs24">¥ <em class="fs40">20</em></p>
+								<span class="fs12 coupon_text">门店销售使用优惠券抵扣</span>
+							</div>
+						</div>
+						<div class="coupon_bottom colf fs12 pl15 box-b w-100">
+							2016.03.01-2016.04.02
+						</div>
+					</div>
+					<div class="pt5 flex-box flex-col flex-between flex-grow-0 coupon_right box-b">
+						<div class="flex-box w-100 flex-grow-1 flex-center box-b">
+							<div class="pl5">立<br/>即<br/>领<br/>取</div>
+							<i class="Icon-arrow pr5"></i>
+						</div>
+						<div class="coupon_bottom flex-grow-0 w-100">
+						</div>
+					</div>
+				</a>
+				<div class="coupon_wrap_sub">
+				</div>
+			</li>
+			<li class="mb10 relative out-date">
+				<a href="" class="coupon_wrap flex-box flex-col-stretch bgf">
+					<div class="flex-box flex-col flex-between flex-grow-1">
+						<div class="flex-box plr10 pt10 w-100">
+							<div class="img-wrap flex-grow-0 ba br5 mr10 hidden">
+								<p class="item-pic">
+									<img src="images/coupon1.jpg" alt="" class="imgm">
+								</p>
+							</div>
+							<div class="pb10">
+								<p class="col-c9 fs24">¥ <em class="fs40">20</em></p>
+								<span class="fs12 coupon_text">门店销售使用优惠券抵扣</span>
+							</div>
+						</div>
+						<div class="coupon_bottom colf fs12 pl15 box-b w-100">
+							2016.03.01-2016.04.02
+						</div>
+					</div>
+					<div class="pt5 flex-box flex-col flex-between flex-grow-0 coupon_right box-b">
+						<div class="flex-box w-100 flex-grow-1 flex-center box-b">
+							<div class="col9 pr5">已<br/>使<br/>用</div>
+						</div>
+						<div class="coupon_bottom flex-grow-0 w-100">
+						</div>
+					</div>
+				</a>
+				<div class="coupon_wrap_sub">
+				</div>
+			</li>
+		</ul>
+	</section>
+
+<script src="weui/lib/jquery-2.1.4.js"></script>
+<!-- <script src="weui/js/jquery-weui.min.js"></script> -->
+<script src="weui/js/jquery-weui.js"></script>
+<script src="weui/js/city-picker.min.js"></script>
+<script src="weui/js/swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.raty.min.js"></script>
+<script src="js/functions.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+<script>
+	$(function(){
+		$(".item-pic").each(function(){
+			var w = $(this).width();
+			$(this).css({"height": w});
+		});
+		//优惠劵高度
+		$(".coupon_wrap_sub").each(function() {
+			var coupon_h = $(".coupon_wrap").outerHeight();
+			var coupon_r = $(".coupon_right").width() - 5;
+			$(".coupon_wrap_sub").css({"height":coupon_h,"right":coupon_r})
+		});
+	});
+</script>
+
+</section>
+
+
+</body>
+</html>

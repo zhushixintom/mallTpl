@@ -3,12 +3,17 @@
 .m-label {
   position: relative;
   display: block;
+  padding: 0 0 10px 0;
   input {
     position: absolute;
     left: -999em;
     &:checked + i {
       color: @color-primary;
       border-color: @color-primary;
+    }
+    &:disabled + i {
+      color: #999;
+      border-color: #ddd;
     }
   }
   i {

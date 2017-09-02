@@ -86,13 +86,75 @@ body,
   padding-bottom: 60px;
 }
 .top-fixed ~ .main {
-  padding-top: 50px;
+  padding-top: 44px;
 }
-.last a:last-child,
-.last li:last-child {
+.last > a:last-child,
+.last > li:last-child {
   border-bottom: none;
 }
 /* ================================================= */
+/*================= 头部菜单 =================*/
+.header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  color: #000;
+  position: relative;
+}
+.header a {
+  position: absolute;
+  font-size: 0.65rem;
+}
+.header a .header_back {
+  height: 22px;
+  margin-right: 4px;
+}
+.header a .header_options {
+  height: 22px;
+}
+.header .header_right,
+.header .header_left {
+  height: 44px;
+  top: 0;
+}
+.header .header_left {
+  left: 0;
+  padding-left: 10px;
+}
+.header .header_right {
+  right: 0;
+  padding-right: 10px;
+  margin-top: -1px;
+}
+.header .header_middle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+.header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #f0f0f0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+}
+.placeholder-header {
+  height: 44px;
+  width: 100%;
+}
 /*底部菜单*/
 .footer {
   height: 50px;
@@ -167,7 +229,6 @@ body,
 .ico-foot3 {
   background-position: 0 -66px;
 }
-/* 商品详情底部 end */
 /*登录 注册*/
 .inp-block {
   border: 1px solid #d9d9d9;
@@ -245,6 +306,7 @@ body,
 .m-label {
   position: relative;
   display: block;
+  padding: 0 0 10px 0;
 }
 .m-label input {
   position: absolute;
@@ -253,6 +315,10 @@ body,
 .m-label input:checked + i {
   color: #ff6633;
   border-color: #ff6633;
+}
+.m-label input:disabled + i {
+  color: #999;
+  border-color: #ddd;
 }
 .m-label i {
   border-radius: 3px;
@@ -468,7 +534,7 @@ a.link:active {
   position: fixed;
   bottom: 60px;
   right: 10px;
-  display: inline-block;
+  display: none;
   width: 41px;
   height: 41px;
   padding-top: 9px;
@@ -690,10 +756,36 @@ a.link:active {
   position: relative;
   background-position-x: 0;
 }
-.Icon-star {
-  width: 18px;
-  height: 18px;
-  top: -2px;
+.Icon-voice-btn {
+  width: 22px;
+  height: 22px;
+  background-position-y: -22px;
+  display: block;
+}
+.Icon-text-btn {
+  width: 22px;
+  height: 22px;
+  background-position-y: 0px;
+  display: block;
+}
+.Icon-pic-btn {
+  width: 22px;
+  height: 22px;
+  background-position-y: -66px;
+  display: block;
+}
+.Icon-voice {
+  background-position: 0 -44px;
+  position: absolute;
+  top: calc(50%);
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  left: 4px;
+}
+.Icon-arrow {
+  width: 25px;
+  height: 25px;
+  background-position-y: -88px;
 }
 /* ========================================================== */
 /*cells*/
@@ -1828,6 +1920,93 @@ i[class*="ico-addr-"] {
 }
 .item-img.item-text img {
   display: block;
+}
+/* 优惠劵 */
+.voucher_con li {
+  background-image: url(../images/voucher_unused.png);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: 75px auto;
+}
+.voucher_con .item-hd {
+  background: url(../images/voucher_bg1.png) center 5px no-repeat;
+  background-size: auto 3px;
+}
+.voucher_con .item-hd span {
+  display: block;
+}
+.voucher_con .item-hd span b {
+  line-height: 1;
+}
+.voucher_con .item-bd {
+  height: 30px;
+  line-height: 30px;
+  background: url(../images/voucher_bg2.png) 0 0 repeat-x;
+  background-size: auto 3.5px;
+}
+.voucher_con .item-bd i {
+  font-style: normal;
+}
+.voucher_con .over {
+  background-image: url(../images/voucher_over.png);
+}
+.voucher_con .over .item-hd span {
+  color: #9d9d9d;
+}
+.voucher_con .used {
+  background-image: url(../images/voucher_used.png);
+}
+.voucher_con .used .item-hd span {
+  color: #9d9d9d;
+}
+/*优惠券-1*/
+.coupon_wrap {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.coupon_wrap_sub {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 100%;
+  width: 15px;
+  background-image: url("../images/coupon_dot.png");
+  background-position: 0 0;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.coupon_wrap .coupon_text {
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #ffeaea;
+  color: #5d5f5f;
+}
+.coupon_bottom {
+  height: 28px;
+  line-height: 28px;
+  background-color: #ff6633;
+}
+.w-100 {
+  width: 100%;
+}
+.coupon_right {
+  width: 16%;
+}
+.coupon_wrap .img-wrap {
+  width: 25%;
+  min-width: 60px;
+  border-radius: 8px;
+}
+.out-date .coupon_bottom {
+  background-color: #c9c9c9;
+}
+.out-date .coupon_wrap .coupon_text {
+  background-color: #c9c9c9;
+}
+.col-c9 {
+  color: #c9c9c9;
 }
 /* weui样式修改
  */
